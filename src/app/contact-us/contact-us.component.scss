@@ -1,0 +1,97 @@
+.container-about-us{
+  width: 1040px;
+  height: 588px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.width-part1{
+  width: 520px;
+  height: 588px;
+  display: block;
+  margin-right: 0 !important;
+}
+.part1-about-us{
+  width: 520px;
+  height: 278px;
+  margin-right: 0 !important;
+}
+.part2-about-us{
+  width: 520px;
+  height: 311px;
+  margin-right: 0 !important;
+}
+.part3-about-us{
+  width: 520px;
+  height: 578px;
+  margin-right: 0 !important;
+  border-left: 2px solid #223b40;
+  border-top: 2px solid #223b40;
+  border-bottom: 2px solid #223b40;
+}
+.site-color-light{
+  background-color: rgb(70, 119, 126);
+
+}
+.border-2{
+  border-radius: 100px ;
+  border: 5px #ff34ff ;
+}
+
+.name-contact {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 100px;
+  height: 45px;
+  width: 354px;
+  position: relative;
+  margin: 0;
+  left: 80px;
+  border: solid 2px rgba(34, 59, 64, 1.0);
+  border-radius: 20px;
+}
+.email-contact{
+  display: block;
+  background-color: rgba(255,255,255,0.0);
+  top: 130px;
+  height: 45px;
+  width: 354px;
+  position: relative;
+  margin: 0;
+  left: 80px;
+  border:solid 2px rgba(34,59,64,1.0);
+  border-radius: 20px;
+}
+.text-email-contact{
+  display: block;
+  background-color: rgba(255,255,255,0.0);
+  top: 160px;
+  height: 150px;
+  width: 354px;
+  position: relative;
+  margin: 0;
+  left: 80px;
+  border:solid 2px rgba(34,59,64,1.0);
+  border-radius: 20px;
+  padding-bottom: 100px;
+}
+.btn-contact{
+  display: block;
+  background-color: rgba(255,255,255,0.0);
+  top: 190px;
+  height: 45px;
+  width: 354px;
+  position: relative;
+  margin: 0;
+  left: 80px;
+  border-radius: 20px;
+  background-color: #223b40;
+}
+.display-contact{
+  display: flex;
+  direction: rtl;
+}
+.location-size-icon{
+  font-size: 20px;
+}

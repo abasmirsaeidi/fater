@@ -9,6 +9,7 @@ import { AppComponent} from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {AgmCoreModule} from '@agm/core';
+import {FooterModule} from './footer/footer.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {AgmCoreModule} from '@agm/core';
   ],
 
   imports: [
+    FooterModule,
     BrowserModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
