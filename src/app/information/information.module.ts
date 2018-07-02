@@ -1,23 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CollectionsComponent } from './collections.component';
+import { InformationComponent } from './Information.component';
 import {RouterModule, Routes} from '@angular/router';
 import {MDBBootstrapModule} from '../../../angular-bootstrap-md';
 
 const routes: Routes = [
-  { path: '', component: CollectionsComponent}
+  { path: '', component: InformationComponent}
 ];
-
 
 @NgModule({
   imports: [
     CommonModule,
     MDBBootstrapModule.forRoot(),
-
     RouterModule.forChild(routes)
   ],
-  declarations: [
-    CollectionsComponent
-  ]
+  declarations: [InformationComponent]
 })
-export class CollectionsModule { }
+export class InformationModule { }

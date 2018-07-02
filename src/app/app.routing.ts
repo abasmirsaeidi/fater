@@ -6,6 +6,8 @@ import { CommonModule} from '@angular/common';
 const routes: Routes = [
   { path: 'home',       loadChildren: './home/home.module#HomeModule' },
   { path: 'abilities',  loadChildren: './abilities/abilities.module#AbilitiesModule' },
+  { path: 'news',  loadChildren: './news/news.module#NewsModule' },
+  { path: 'information',  loadChildren: './information/information.module#InformationModule' },
   { path: 'about-us',   loadChildren: './about-us/about-us.module#AboutUsModule' },
   { path: 'assist',     loadChildren: './assist/assist.module#AssistModule' },
   { path: 'contact-us', loadChildren: './contact-us/contact-us.module#ContactUsModule' },

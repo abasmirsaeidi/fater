@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {AgmCoreModule} from '@agm/core';
 import {FooterModule} from './footer/footer.module';
+import { NewsComponent } from './news/news.component';
+import { InformationComponent } from './information/information.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import {FooterModule} from './footer/footer.module';
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    NewsComponent,
+    InformationComponent,
   ],
 
   imports: [

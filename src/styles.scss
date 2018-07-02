@@ -39,6 +39,25 @@ body {
   font-weight: 500;
   vertical-align: baseline;
 }
+
+
+
+/////////////////////Header?////////////////////////////
+.right-button{
+  position: relative;
+  left: 270px;
+}
+.color-btn{
+  color: #223b40 !important;
+}
+.dropup {
+  .dropdown-menu {
+    margin-right: 14px !important;
+  }
+}
+
+/////////////////////Header?////////////////////////////
+
 .mask2{
   direction: rtl;
   height: 416px;
@@ -293,7 +312,7 @@ justify-content: right;
 }
 .slide-point .carousel-indicators{
   position: relative !important;
-  top: 620px !important;
+  top: 700px !important;
 
 }
 .slide-point .carousel-indicators li {
@@ -306,8 +325,8 @@ justify-content: right;
   display: none;
 }
 .container-sec1{
-  min-width: 1366px;
-  height: 455px;
+  width: 100%;
+  height: 455px !important;
   position: relative;
   margin-bottom: 200px;
 }
@@ -360,4 +379,58 @@ justify-content: right;
   top: 28px;
   padding: 0;
   left: 20px;
+  background-color: transparent;
+}
+.container-sec1 .carousel-indicators li  {
+  width: 15px ;
+  height: 15px;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+.banner-collections{
+  position: relative;
+  bottom: 117px;
+}
+.carousel slide-point {
+  height: 455px;
+  width: 100%;
+}
+.height-header{
+  height: 65px;
+  width: 100%;
+  background-color: sienna;
+}
+.btn-outline-info{
+  border: #ffffff ;
+  color: #ffffff;
+}
+.container-collections{
+  max-width: 1166px;
+  margin: auto;
+  padding: 0;
+  justify-content: space-between;
+}
+.picture{
+  position: relative;
+  height: 455px;
+  bottom: 57px;
+}
+
+.banner-collections .carousel-inner{
+  height: 455px !important;
+  position: relative;
+  top: 199px;
+}
+
+.collections{
+  position: relative;
+  bottom: 100px;
+}
+.card-news{
+  position: relative;
+  bottom: 100px;
+}
+.add-btn{
+  position: relative;
+  bottom: 100px;
 }
