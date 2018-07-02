@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InformationComponent } from './Information.component';
+import { InformationComponent } from './information.component';
 import {RouterModule, Routes} from '@angular/router';
 import {MDBBootstrapModule} from '../../../angular-bootstrap-md';
 
