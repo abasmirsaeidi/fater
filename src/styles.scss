@@ -10,6 +10,7 @@ body {
 
   font-family: IRANSans;
   font-weight: 300;
+
 }
 
 .font-17{
@@ -40,12 +41,110 @@ body {
   vertical-align: baseline;
 }
 
+///////////////////////////////////////////////////////
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
 
 
+////////////////////////////////////////////////////////
 /////////////////////Header?////////////////////////////
+
 .right-button{
-  position: relative;
-  left: 270px;
+  position: absolute;
+  right: 80px;
+  padding-bottom: 8px;
 }
 .color-btn{
   color: #223b40 !important;
@@ -55,7 +154,17 @@ body {
     margin-right: 14px !important;
   }
 }
-
+.header-site{
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  font-weight: 300;
+  height: 59px;
+  padding: 0 !important;
+  width: 100%;
+}
+.container-header{
+  width: 1168px;
+  margin: auto;
+}
 /////////////////////Header?////////////////////////////
 
 .mask2{
@@ -433,4 +542,30 @@ justify-content: right;
 .add-btn{
   position: relative;
   bottom: 100px;
+}
+
+.height-width{
+  max-width: 1055px;
+  min-width: 1055px;
+  padding: 0;
+  margin: 0;
+}
+.left-buttom{
+  background-color: #8beeff;
+  border-radius: 17px;
+  width: 121px;
+  height: 32px;
+  padding-right: 13px;
+  padding-top: 4px;
+  margin-bottom: 9px;
+}
+.right-button .dropdown-toggle::after {
+  margin-right: 8px;
+}
+.left-buttom .dropdown-toggle::after{
+  margin-right: 8px !important;
+}
+.height-header2{
+  min-height: 59px;
+  max-height: 59px;
 }

@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {AgmCoreModule} from '@agm/core';
 import {FooterModule} from './footer/footer.module';
+import {HttpClientModule} from '@angular/common/http';
+import {HttpService} from './Services/httpServices.service';
 // import { NewsComponent } from './news/news.component';
 // import { InformationComponent } from './information/information.component';
 
@@ -24,6 +26,7 @@ import {FooterModule} from './footer/footer.module';
   ],
 
   imports: [
+    HttpClientModule,
     FooterModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -34,7 +37,7 @@ import {FooterModule} from './footer/footer.module';
       apiKey: 'your key here'
     })
   ],
-  providers: [],
+  providers: [HttpService ],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA ]
 
