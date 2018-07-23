@@ -1,4 +1,70 @@
 //.mt-header{
 //  margin-top: 68px;
 //}
+.header-of-site{
+  height: 65px;
+}
+@media (min-width: 1200px) {
+  .caption-one h1 {
+    position: relative;
+    top: 53px;
+    left: 553px;
+    width: 300px;
+    height: 100px;
+    text-align: right;
+  }
+  .carousel-indicators{
+    position: relative;
+    top: 26px !important;
+    left: 125px !important;
+  }
+  mdb-carousel .my-style .carousel-indicators li {
+    position: relative;
+    bottom: 482px;
+    right: 0 !important;
+  }
+  .bg-cap-z{
+    z-index: -1;
+    width: 1125px;
+    height: 409px;
+    position: absolute;
+    bottom: 104px;
+    left: 114px;
+    background-color: #223b40;
+  }
+  .width-text {
+    width: 460px;
+    margin: 0;
+    position: relative;
+    left: 390px;
+    top: 0;
+    line-height: 37px;
+    direction: rtl;
+    font-weight: normal !important;
+  }
+  .container-header {
+    width: 1166px;
+    max-width: 1166px;
+  }
+  .container{
+    main-width: 1166px !important;
+    max-width: 1166px !important;
+  }
+  .bg-cap-z{
+    z-index: -1;
+    width: 1125px;
+    height: 409px;
+    position: absolute;
+    bottom: 104px;
+    left: 114px;
+    background-color: #223b40;
+  }
+  .width-cars {
+    width: 1125PX;
+    height: 385px;
+    position: relative;
+    top: 20px;
+    left: 75px;
+  }
+}
 

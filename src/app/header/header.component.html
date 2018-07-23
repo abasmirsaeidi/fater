@@ -1,37 +1,54 @@
 
-<div class="navbar fixed-top navbar-expand-lg navbar-dark ie-nav direction site-color height-header2 " [containerInside]="false">
-  <div class="container m-auto height-header1 height-width">
+<div class="navbar fixed-top navbar-expand-lg navbar-dark  direction site-color header-of-site " [containerInside]="false">
+  <div class="container m-auto height-header1  ">
 
-    <a routerLink="/home"><img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-fater.png"></a>
-      <ul class="navbar-nav direction  right-button ">
+    <a routerLink="/home" class="">
+      <img class="" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-fater.png">
+    </a>
 
-        <!-- Dropdown -->
-        <li class="nav-item dropdown" dropdown>
-          <a dropdownToggle  type="button" class="nav-link dropdown-toggle  font-17 right-line1 "  > مجموعه ها<span class="caret"></span></a>
+    <ul class="navbar-nav direction  right-button d-none d-lg-inline-flex ">
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown hover" dropdown>
+        <a dropdownToggle  type="button" class="nav-link dropdown-toggle  font-17 right-line1 "  > مجموعه ها<span class="caret"></span></a>
+        <div class="main-dropdown  dropdown dropdown-menu">
+          <div class="dropdown-hover">
+
           <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-            <a class="dropdown-item  font-17"  routerLink="/collections">تماس با ما</a>
-            <a class="dropdown-item  font-17"  routerLink="/collections"> تماس با ما</a>
-            <a class="dropdown-item  font-17"  routerLink="/collections"> تماس با ما</a>
-            <div class="divider dropdown-divider"></div>
-            <a class="dropdown-item waves-light font-17"  routerLink="/home">تماس با ما</a>
+            <a class="dropdown-item  font-17 mt-2"  routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <a class="dropdown-item  font-17"       routerLink="/collections">مجموعه اپ نت</a>
+            <button type="button" class="btn btn-add-dropdown btn-outline btn-rounded font-16" >بیشتر</button>
+
           </div>
-        </li>
+        </div>
+        </div>
+      </li>
+      <!-- Dropdown -->
 
-        <!-- Dropdown -->
-        <li class="nav-item  " >
-          <a class="nav-link font-17 right-line" routerLink="/abilities">توانمندی ها <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item " >
-          <a class="nav-link font-17 right-line" routerLink="/about-us">درباره ی ما </a>
-        </li>
-        <li class="nav-item " >
-          <a class="nav-link font-17 right-line" routerLink="/contact-us">تماس با ما</a>
-        </li>
-        <li class="nav-item " >
-      </ul>
+      <li class="nav-item  " >
+        <a class="nav-link font-17 right-line" routerLink="/abilities">توانمندی ها <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item " >
+        <a class="nav-link font-17 right-line" routerLink="/about-us">درباره ی ما </a>
+      </li>
+      <li class="nav-item " >
+        <a class="nav-link font-17 right-line" routerLink="/contact-us">تماس با ما</a>
+      </li>
+      <li class="nav-item " >
+    </ul>
+
+
     <!-- Dropdown -->
-
-      <li class="nav-item dropdown navbar-nav dropdown-custom " dropdown>
+    <li class="nav-item dropdown navbar-nav dropdown-custom " dropdown>
       <a dropdownToggle  type="button" class="nav-link dropdown-svg left-button dropdown-toggle font-17 color-btn right-line1"  >همکاری<span class="caret"></span></a>
       <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
         <a class="dropdown-item  font-17"  routerLink="/home">تماس با ما</a>
@@ -42,7 +59,6 @@
       </div>
     </li>
     <!-- Dropdown -->
-
   </div>
 
 
@@ -50,28 +66,10 @@
 
 
 
+<!--////////////////////////////////////////////-->
 
-<!--<br>-->
-<!--<br>-->
-<!--<div class="row">-->
-  <!--<div class="col-xs-12 col-md-8 col-md-offset-2">-->
-    <!--<h5>{{ account.name }}</h5>-->
-    <!--<hr>-->
-    <!--<p>وضعیت این حساب کاربری: {{ account.status }}</p>-->
-    <!--<button class="btn btn-default" (click)="onSetTo('فعال')">تغییر وضعیت به «فعال»</button>-->
-    <!--<button class="btn btn-default" (click)="onSetTo('غیرفعال')">تغییر وضعیت به «غیرفعال»</button>-->
-    <!--<button class="btn btn-default" (click)="onSetTo('مخفی')">تغییر وضعیت به «مخفی»</button>-->
-  <!--</div>-->
-<!--</div>-->
-<!--<br>-->
-<!--<br>-->
-<!--<div class="row">-->
-  <!--<div class="col-xs-12 col-md-8 col-md-offset-2">-->
-    <!--<h5>{{ account.name }}</h5>-->
-    <!--<hr>-->
-    <!--<p>وضعیت این حساب کاربری: {{ account.status }}</p>-->
-    <!--<button class="btn btn-default" (click)="onSetTo('فعال')">تغییر وضعیت به «فعال»</button>-->
-    <!--<button class="btn btn-default" (click)="onSetTo('غیرفعال')">تغییر وضعیت به «غیرفعال»</button>-->
-    <!--<button class="btn btn-default" (click)="onSetTo('مخفی')">تغییر وضعیت به «مخفی»</button>-->
-  <!--</div>-->
-<!--</div>-->
+<!--&lt;!&ndash;/.Navbar red color&ndash;&gt;-->
+<!--<mdb-navbar SideClass="navbar navbar-dark red">-->
+  <!--...-->
+<!--</mdb-navbar>-->
+<!--&lt;!&ndash;/.Navbar red color&ndash;&gt;-->

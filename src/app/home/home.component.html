@@ -1,105 +1,63 @@
 <div class="height-header"></div>
+
+
+
 <div class="mask2">
   <div class="banner view ">
     <div class="mask rgba-black-light"></div>
   </div>
 </div>
-<div class=" toolbar-home navbar navbar-expand-lg site-color-light card-shadow1">
-  <ul class="navbar-nav pl-3 ">
 
-    <li class="nav-item  first-logo" >
-      <a class="nav-link pt-3" ><img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-wikimedia-logo.png
-"></a>
-    </li>
-    <li class="nav-item  first-logo" >
-      <a class="nav-link pt-4"><img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-gasin-logo-png.png
-"></a>
-    </li>
-    <li class="nav-item  first-logo" >
-      <a class="nav-link"><img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-png-a-letter-logo-design.png
-"></a>
-    </li>
-    <li class="nav-item  first-logo" >
-      <a class="nav-link pt-2"><img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-home-logo.png
-"></a>
-    </li>
-    <li class="nav-item  first-logo" >
-      <a class="nav-link pt-2"><img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-googledrivelogo.png
-"></a>
-    </li>
-    <li class="nav-item  first-logo" >
-      <a class="nav-link pt-2"><img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-gitlogo.png
-"></a>
-    </li>
-    <li class="nav-item  first-logo" >
-      <a class="nav-link pt-3"><img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-580b57fcd9996e24bc43c513.png
-"></a>
-    </li>
-  </ul>
+<div class="row">
+  <div class="container logos-home">
 
+    <div class=" toolbar-home navbar navbar-expand-lg site-color-light card-shadow1">
+      <ul class="navbar-nav logo pl-3 col">
+
+        <li class="nav-item text-center first-logo col-2" *ngFor="let logo of receivedPageData.assist_company" >
+          <a class="nav-link pt-3" href="{{ logo.link }}">
+            <img src="{{ logo.logo }}">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
+
+
 <!--/////////////////////////////////////////-->
 
-<div class="m-auto row width-1166">
 
-<!--Carousel Wrapper-->
-<mdb-carousel [isControls]="true" class="carousel slide carousel-fade my-style" [animation]="'fade'">
-  <!--First slide-->
-  <mdb-slide>
-    <img class=" width-cars shadow-card" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-rectangle-6%203.png" alt="First slide">
-    <div class="carousel-caption  caption-one ">
-      <div class="bg-cap">
-        <h1 class="font-29">اهداف ما</h1>
-        <h4 class="width-text font-20 ">کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیش
-          تری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و
-          فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت م
-          ی تو شرایط سخ
-          ت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابه
-          اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</h4>
-      </div>
-    </div>
-  </mdb-slide>
-  <!--/First slide-->
-  <!--Second slide-->
-  <div class="bg-cap-z">
-  </div>
-  <mdb-slide>
+<div class=" row ">
+  <div class="container content px-15">
+    <!--Carousel Wrapper-->
+    <mdb-carousel [isControls]="true" class="carousel slide carousel-fade my-style" [animation]="'fade'" [interval]="3000">
+      <!--First slide-->
 
-    <img class=" width-cars shadow-card" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-rectangle-6%203.png" alt="First slide">
-    <div class="">
-      <div class="carousel-caption caption-one ">
-
-          <h1 class="font-29">اهداف اونها</h1>
-          <h4 class="width-text font-20">کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیش
-            تری راد. در این صورت م
-            ی توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخ
-            ت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته
-            اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</h4>
+      <mdb-slide *ngFor="let proposition of receivedPageData.value_proposition">
+        <div class="img-value-proposition">
+        <img class="  shadow-card img-fluid " src="{{ proposition.img}}" alt="First slide">
         </div>
-    </div>
-  </mdb-slide>
-  <!--/Second slide-->
-  <!--Third slide-->
-  <mdb-slide>
-    <img class=" width-cars shadow-card" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-rectangle-6%203.png" alt="First slide">
-    <div class="carousel-caption caption-one ">
-      <!--<div class="bg-cap">-->
-      <h1 class="font-29">اهداف اینها</h1>
-      <h4 class="width-text font-20">کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیش
-        تری را برئه راهکارها و شرایط سخ
-        ت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته
-        اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</h4>
-      <!--</div>-->
-    </div>
-  </mdb-slide>
-  <!--/.Carousel Wrapper-->
-</mdb-carousel>
+        <div class="carousel-caption ">
+          <div class="bg-cap">
+            <h1 class="font-29 text-right direction pb-3">{{ proposition.title }}</h1>
+            <h4 class="font-20  direction text-justify">{{ proposition.caption }}</h4>
+          </div>
+        </div>
+      </mdb-slide>
+      <div class="bg-cap-z">
+      </div>
+    </mdb-carousel>
+
+  </div>
 </div>
+
+
 <!--///////////////////////////////////////////-->
+<div class="row site-color mt-171">
+<div class="  news container">
 
-<div class="row site-color container-6 ">
-
-  <!--<div class="container-5 m-auto">-->
+  <!--<div class="cardjs m-auto" *ngFor="let i of [1,2,3,4,5]" >-->
     <!--<img class="card-with-pic img-fluid view" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg">-->
     <!--<div class="card-with-cap ">-->
       <!--<h2 class="text-card font-20">دیگر برنامه های فاطر</h2>-->
@@ -109,99 +67,135 @@
       <!--</div>-->
     <!--</div>-->
   <!--</div>-->
-
-  <!--<div class="container-5 m-auto">-->
-    <!--<img class="card-with-pic img-fluid view" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg">-->
-    <!--<div class="card-with-cap ">-->
-      <!--<h2 class="text-card font-20">دیگر برنامه های فاطر</h2>-->
-      <!--<p class="text-card2 font-18">چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>-->
-      <!--<div class="row text-center1 ">-->
-        <!--<a class="nav-link btn-know font-16">اطلاعات بیشتر</a>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-
+</div>
 </div>
 <!--/////////////////////////////////////////////////////////-->
-
 
 
 <!--//////////////////////////////////////////////////////////////////-->
 <div class="row text-center1">
   <h1 class="pb-5 pt-5 font-29">اخبار</h1>
 </div>
-<a>
 
-</a>
-  <div class="container-cards row">
 
-  <div class="card width-card2 card-shadow1">
-    <!--Card image-->
-    <div routerLink="/information" class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 2.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon" routerLink="/information">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
+<!--/////////////////////////////////////////////////////////////////////-->
+
+
+
+
+<div class="row">
+  <div class="container home-cards">
+
+    <div class="col-xs-4  col-xl-4 col-lg-4 col-sm-6 d-inline-block mb-0 mb-sm-5  " *ngFor="let program of receivedPageData.other_program; let i=index ">
+
+      <!--Card-->
+      <div class="card news-card-shadow mx-auto" [class.d-none]="i>=2"  [class.d-md-block]="i<=3" [class.d-lg-none]="i>=3">
+        <!--[class.d-lg-block]="i<=8">-->
+        <!--Card image-->
+        <div class="view  waves-light img-of-card" mdbWavesEffect>
+          <img src="{{ program.img }}" class="img-fluid  ffff" alt="Card image with a tree in a middle of a lake.">
+          <a>
+            <div class="mask"></div>
+          </a>
+        </div>
+        <span>   <div class="share-icon-div ">
+            <a class="activator p-3 mr-2  share-icon" routerLink="/information">
+              <i class="fa fa-share-alt rotate-icon "></i>
+            </a>
+          </div>
+        </span>
+
+        <!--Card content-->
+        <div class="card-body">
+          <!--Text-->
+          <p class="card-text card-text1 font-18">{{ program.caption }}</p>
+        </div>
+        <!--Card content-->
+
       </div>
-      <p class="card-text card-text1 font-18">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+      <!--/.Card-->
     </div>
-    <!--/.Card content-->
   </div>
-
-  <div class="card width-card2 card-shadow1">
-    <!--Card image-->
-    <div class="view overlay waves-light" routerLink="/information" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width ">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon" routerLink="/information">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
-      </div>
-      <p class="card-text card-text1 font-18">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
-
-
-  <div class="card width-card2 card-shadow1">
-    <!--Card image-->
-    <div class="view overlay waves-light"routerLink="/information" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width">
-      <div class="share-icon-div ">
-      <a class="activator p-3 mr-2  share-icon" routerLink="/information">
-        <i class="fa fa-share-alt rotate-icon "></i>
-      </a>
-      </div>
-      <p class="card-text card-text1 font-18">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
-
 </div>
+
+
+<!--//////////////////////////////////////////////////////////////////////-->
 <div class="row text-center1 ">
   <a class="nav-link btn-news font-20" routerLink="/news">دیگر اخبار فاطر</a>
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container-header row">-->
+<!--&lt;!&ndash; Card &ndash;&gt;-->
+<!--<div class="card col-xl-3 col-lg-4">-->
+
+<!--&lt;!&ndash; Card image &ndash;&gt;-->
+<!--<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">-->
+
+<!--&lt;!&ndash; Card content &ndash;&gt;-->
+<!--<div class="card-body">-->
+
+<!--&lt;!&ndash; Title &ndash;&gt;-->
+<!--<h4 class="card-title"><a>Card title</a></h4>-->
+<!--&lt;!&ndash; Text &ndash;&gt;-->
+<!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--&lt;!&ndash; Button &ndash;&gt;-->
+<!--<a href="#" class="btn btn-primary">Button</a>-->
+
+<!--</div>-->
+
+<!--</div>-->
+<!--&lt;!&ndash; Card &ndash;&gt;-->
+<!--&lt;!&ndash; Card &ndash;&gt;-->
+<!--<div class="card col-xl-3 col-lg-4">-->
+
+<!--&lt;!&ndash; Card image &ndash;&gt;-->
+<!--<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">-->
+
+<!--&lt;!&ndash; Card content &ndash;&gt;-->
+<!--<div class="card-body">-->
+
+<!--&lt;!&ndash; Title &ndash;&gt;-->
+<!--<h4 class="card-title"><a>Card title</a></h4>-->
+<!--&lt;!&ndash; Text &ndash;&gt;-->
+<!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--&lt;!&ndash; Button &ndash;&gt;-->
+<!--<a href="#" class="btn btn-primary">Button</a>-->
+
+<!--</div>-->
+
+<!--</div>-->
+<!--&lt;!&ndash; Card &ndash;&gt;-->
+<!--&lt;!&ndash; Card &ndash;&gt;-->
+<!--<div class="card col-xl-3 col-lg-4">-->
+
+<!--&lt;!&ndash; Card image &ndash;&gt;-->
+<!--<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">-->
+
+<!--&lt;!&ndash; Card content &ndash;&gt;-->
+<!--<div class="card-body">-->
+
+<!--&lt;!&ndash; Title &ndash;&gt;-->
+<!--<h4 class="card-title"><a>Card title</a></h4>-->
+<!--&lt;!&ndash; Text &ndash;&gt;-->
+<!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--&lt;!&ndash; Button &ndash;&gt;-->
+<!--<a href="#" class="btn btn-primary">Button</a>-->
+
+<!--</div>-->
+
+<!--</div>-->
+<!-- Card -->
+<!--</div>-->

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {HomeComponent} from './home.component';
 import {RouterModule, Routes} from '@angular/router';
 import {MDBBootstrapModule} from '../../../angular-bootstrap-md';
+import {PageService} from '../Services/Page.Service';
 
 const routes: Routes = [
   { path: '', component: HomeComponent}
@@ -18,5 +19,8 @@ const routes: Routes = [
   declarations: [
     HomeComponent,
   ],
+  providers:[
+    PageService
+  ]
 })
 export class HomeModule { }

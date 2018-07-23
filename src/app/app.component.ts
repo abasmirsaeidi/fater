@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-// import {HttpService} from './Services/httpServices.service';
-// import {Post} from './Model/post.model';
+import {NavigationEnd, Router} from '@angular/router';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,11 +8,31 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
+  constructor(private router: Router){}
 
   ngOnInit() {
+    this.router.events.subscribe((event) => {
+        if ( !(event instanceof NavigationEnd) ) {
+          return;
+        }
+        window.scroll(0, 0);
+      }
+    )
+  };
 
-  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
   // Posts: Post[];
   // article = {
   //   id: 'لاااااااااام' ,
