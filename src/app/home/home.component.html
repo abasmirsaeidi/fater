@@ -14,8 +14,8 @@
     <div class=" toolbar-home navbar navbar-expand-lg site-color-light card-shadow1">
       <ul class="navbar-nav logo pl-3 col">
 
-        <li class="nav-item text-center first-logo col-2" *ngFor="let logo of receivedPageData.assist_company" >
-          <a class="nav-link pt-3" href="{{ logo.link }}">
+        <li class="nav-item text-center first-logo col-3 col-md-2" *ngFor="let logo of receivedPageData.assist_company; let i=index" [class.d-none]="i>=4"  [class.d-md-block]="i>=0">
+          <a class="nav-link pt-3 " href="{{ logo.link }}">
             <img src="{{ logo.logo }}">
           </a>
         </li>
@@ -34,9 +34,9 @@
     <mdb-carousel [isControls]="true" class="carousel slide carousel-fade my-style" [animation]="'fade'" [interval]="3000">
       <!--First slide-->
 
-      <mdb-slide *ngFor="let proposition of receivedPageData.value_proposition">
+      <mdb-slide *ngFor="let proposition of receivedPageData.value_proposition" >
         <div class="img-value-proposition">
-        <img class="  shadow-card img-fluid " src="{{ proposition.img}}" alt="First slide">
+          <img class=" shadow-card img-fluid " src="{{ proposition.img}}" alt="First slide">
         </div>
         <div class="carousel-caption ">
           <div class="bg-cap">
@@ -48,7 +48,6 @@
       <div class="bg-cap-z">
       </div>
     </mdb-carousel>
-
   </div>
 </div>
 

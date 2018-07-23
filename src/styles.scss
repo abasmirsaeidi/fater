@@ -854,10 +854,72 @@ mdb-carousel .carousel slide-point {
 
 
 ///////////////////////////////////////////////////
+
+
+
 @media (max-width: 576px) {
   .card{
     width: 315px;
   }
+  .img-value-proposition {
+    padding-right: 20px;
+    padding-left: 20px;
+    width: auto;
+    height: 300px;
+    position: relative;
+    bottom: 95px;
+    //margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-value-proposition img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  .bg-cap-z {
+    z-index: -1;
+    width: 1022px;
+    height: 490px;
+    position: relative;
+    background-color: #223b40;
+    bottom: 450px;
+  }
+  .carousel-caption{
+    position: absolute;
+    left: 22px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    width: 92%;
+    height: 334px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -106px;
+  }
+  .my-style.carousel .carousel-inner {
+    overflow: visible !important;
+    height: 637px;
+  }
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 292px;
+    left: 69px;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+  }
+
 
 }
 
