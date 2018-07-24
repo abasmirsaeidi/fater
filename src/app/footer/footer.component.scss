@@ -6,13 +6,13 @@
   color: #223b40;
   text-align: right;
 }
-.bg-footer2 {
-  height: 108px;
-  width: 338px;
-  border: solid 2px rgba(139, 238, 255, 1.0);
-  padding: 12px !important;
-
-}
+//.bg-footer2 {
+//  height: 108px;
+//  width: 338px;
+//  border: solid 2px rgba(139, 238, 255, 1.0);
+//  padding: 12px !important;
+//
+//}
 .dropdown-toggle {
   margin-right: 14px;
 }
@@ -26,12 +26,12 @@
 @media ( max-width: 576px) {
   .part4-footer {
     position: relative;
-    left: 63px;
+    //left: 63px;
     max-width: 238px;
   }
   .part1-footer{
     position: relative;
-    left: 98px;
+    //left: 98px;
     bottom: 0;
   }
   .part3-footer{

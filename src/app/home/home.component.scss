@@ -1,8 +1,9 @@
 .banner{
-  background: url("https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-photo-1514043454212-14c181f46583.png") 0 0/cover;
+  object-fit: cover;
+  background: url("https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-photo-1514043454212-14c181f46583.png");
   direction: rtl;
   height: 416px;
-  width: 100%;
+  min-width: 100vw;
 }
 .news{
   height: 711px;

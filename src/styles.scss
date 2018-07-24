@@ -171,13 +171,7 @@ input, select {
 
 /////////////////////Header?////////////////////////////
 
-.mask2 {
-  direction: rtl;
-  height: 416px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 1.0);
 
-}
 .right-line {
   border-right: 3px solid #909c9f;
   padding-bottom: 6px;
@@ -858,8 +852,19 @@ mdb-carousel .carousel slide-point {
 
 
 @media (max-width: 576px) {
+  .bg-footer2 {
+    height: 108px;
+    width: 100px;
+    border: solid 2px rgba(139, 238, 255, 1.0);
+    padding: 12px !important;
+
+  }
   .card{
-    width: 315px;
+    width: 300px;
+  }
+
+  body {
+    overflow-x: hidden;
   }
   .img-value-proposition {
     padding-right: 20px;
@@ -882,7 +887,7 @@ mdb-carousel .carousel slide-point {
   }
   .bg-cap-z {
     z-index: -1;
-    width: 1022px;
+    width: 100vw !important;
     height: 490px;
     position: relative;
     background-color: #223b40;
@@ -925,6 +930,9 @@ mdb-carousel .carousel slide-point {
 
 
 @media (min-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   .content.container{
     max-width: 568px;
     min-width: 568px;
@@ -951,7 +959,7 @@ mdb-carousel .carousel slide-point {
     height: 409px;
     position: absolute;
     bottom: -85px;
-    width: 768px;
+    width: 100vw;
     left: -122px;
   }
   .img-value-proposition {
@@ -996,6 +1004,9 @@ mdb-carousel .carousel slide-point {
 }
 
 @media (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .content.container{
     max-width: 720px;
     min-width: 720px;
@@ -1051,6 +1062,9 @@ mdb-carousel .carousel slide-point {
 }
 
 @media ( min-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
   .logos-home.container{
     max-width: 960px;
     min-width: 960px;
@@ -1108,6 +1122,10 @@ mdb-carousel .carousel slide-point {
 }
 
 @media (min-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .mt-171{
     margin-top: 0;
   }
