@@ -11,6 +11,9 @@
   direction: rtl !important;
 }
 body {
+    touch-action: unset !important;
+    user-select: unset !important;
+    -webkit-user-drag: unset !important;
   overflow-x: hidden;
   font-family: IRANSans;
   font-weight: 300;
@@ -852,6 +855,19 @@ mdb-carousel .carousel slide-point {
 
 
 @media (max-width: 576px) {
+  mdb-carousel{
+    touch-action: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .row{
+    display: block;
+    //flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
   .bg-footer2 {
     height: 108px;
     width: 100px;
@@ -860,7 +876,7 @@ mdb-carousel .carousel slide-point {
 
   }
   .card{
-    width: 300px;
+    width: 288px;
   }
 
   body {
@@ -924,24 +940,44 @@ mdb-carousel .carousel slide-point {
     margin-left: 15%;
     list-style: none;
   }
+  .container {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
 
 
 }
 
 
 @media (min-width: 576px) {
+  mdb-carousel div{
+    touch-action: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .row{
+    display: flex;
+    //flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
   body {
     overflow-x: hidden;
   }
-  .content.container{
-    max-width: 568px;
+  .content.container {
+    max-width: 720px;
     min-width: 568px;
-
   }
 
   .home-cards.container{
-    max-width: 600px;
-    min-width: 600px;
+    max-width: 720px;
+    min-width: 576px;
   }
   .logos-home.container{
     max-width: 568px;
@@ -1007,17 +1043,14 @@ mdb-carousel .carousel slide-point {
   body {
     overflow-x: hidden;
   }
-  .content.container{
-    max-width: 720px;
-    min-width: 720px;
-  }
+  .home-cards.container{
+    max-width: 992px;
+    min-width: 720px;  }
+
   .img-of-card{
     height:  196.406px;
   }
-  .home-cards.container{
-    max-width: 832px;
-    min-width: 832px;
-  }
+
   .card{
     width: 320px;
   }
@@ -1179,4 +1212,10 @@ mdb-carousel .carousel slide-point {
 }
 .carousel-inner .carousel-item {
   overflow: visible;
+}
+mdb-carousel{
+  touch-action: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
