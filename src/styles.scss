@@ -877,6 +877,7 @@ mdb-carousel .carousel slide-point {
   }
   .card{
     width: 288px;
+    margin-bottom: 55px;
   }
 
   body {
@@ -971,8 +972,8 @@ mdb-carousel .carousel slide-point {
     overflow-x: hidden;
   }
   .content.container {
-    max-width: 720px;
-    min-width: 568px;
+    max-width: 540px;
+    min-width: 540px;
   }
 
   .home-cards.container{
@@ -980,8 +981,8 @@ mdb-carousel .carousel slide-point {
     min-width: 576px;
   }
   .logos-home.container{
-    max-width: 568px;
-    min-width: 568px;
+    max-width: 570px;
+    min-width: 570px;
 
   }
   .img-of-card{
@@ -1045,8 +1046,12 @@ mdb-carousel .carousel slide-point {
   }
   .home-cards.container{
     max-width: 720px;
-    min-width: 720px;  }
-
+    min-width: 720px;
+  }
+  .content.container{
+    max-width: 746px;
+    min-width: 746px;
+  }
   .img-of-card{
     height:  196.406px;
   }
@@ -1083,7 +1088,7 @@ mdb-carousel .carousel slide-point {
     height: 409px;
     position: absolute;
     bottom: -85px;
-    width: 705px;
+    width: 715px;
     left: 0;
 
   }
