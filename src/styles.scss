@@ -1011,13 +1011,14 @@ mdb-carousel .carousel slide-point {
     object-fit: cover;
   }
   .bg-cap-z{
+    right: 0;
     z-index: -1;
+    width: 100vw;
     height: 409px;
     position: absolute;
-    top: 820px;
-    width: 100vw;
+    background-color: #223b40;
     left: 0;
-    right: auto;
+    top: 827px;
   }
   .carousel-caption{
     position: absolute;
