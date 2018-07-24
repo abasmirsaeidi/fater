@@ -853,6 +853,13 @@ mdb-carousel .carousel slide-point {
 //*****************************max-576*************************************
 
 @media (max-width: 576px) {
+    .m-813{
+      margin-top: 813px;
+
+    }
+  .content.container{
+    height: 0;
+  }
   .toolbar-home {
     width: 90% !important;
   }
@@ -953,6 +960,9 @@ mdb-carousel .carousel slide-point {
 //*****************************min-567*************************************
 
 @media (min-width: 576px) {
+  .content.container{
+    height: 630px;
+  }
   .toolbar-home {
     margin-left: 0;
     margin-right: 0;
@@ -1001,14 +1011,14 @@ mdb-carousel .carousel slide-point {
     object-fit: cover;
   }
   .bg-cap-z{
-    right: 0;
     z-index: -1;
-    width: 100vw;
     height: 409px;
     position: absolute;
-    background-color: #223b40;
+    top: 820px;
+    width: 100vw;
     left: 0;
-    bottom: -558px;  }
+    right: auto;
+  }
   .carousel-caption{
     position: absolute;
     bottom: -265px;
@@ -1039,6 +1049,9 @@ mdb-carousel .carousel slide-point {
 //*****************************min-768*************************************
 
 @media (min-width: 768px) {
+  .content.container{
+    height: 630px;
+  }
   .toolbar-home {
     margin-left: 0;
     margin-right: 0;
@@ -1088,8 +1101,8 @@ mdb-carousel .carousel slide-point {
   .bg-cap-z {
     z-index: -1;
     height: 409px;
-    position: absolute;
-    bottom: -558px;
+    position: relative;
+    top: -345px;
     width: 715px;
     left: auto;
     right: auto;
@@ -1118,6 +1131,9 @@ mdb-carousel .carousel slide-point {
 //*****************************min-992*************************************
 
 @media ( min-width: 992px) {
+  .content.container{
+    height: 630px;
+  }
   .toolbar-home {
     margin-left: 0;
     margin-right: 0;
@@ -1170,7 +1186,7 @@ mdb-carousel .carousel slide-point {
     width: 885px;
     height: 375px;
     position: relative;
-    bottom: 530px;
+    top: -505px;
     background-color: #223b40;
     left: 43px;
     right: 0;
@@ -1185,6 +1201,9 @@ mdb-carousel .carousel slide-point {
 
 //*****************************min-1200*************************************
 @media (min-width: 1200px) {
+  .content.container{
+    height: 630px;
+  }
   .toolbar-home {
     margin-left: 0;
     margin-right: 0;
@@ -1217,8 +1236,8 @@ mdb-carousel .carousel slide-point {
     height: 409px;
     width: 1091px;
     position: relative;
-    bottom: 528px;
     left: 44px;
+    top: -505px;
   }
   .logos-home.container{
     max-width: 1166px;
