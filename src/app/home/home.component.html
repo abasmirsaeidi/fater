@@ -10,9 +10,9 @@
   <div class="container logos-home">
 
     <div class=" toolbar-home navbar navbar-expand-lg site-color-light card-shadow1">
-      <ul class="navbar-nav logo pl-3 col">
+      <ul class="navbar-nav logo  col">
 
-        <li class="nav-item text-center first-logo col-3 col-md-2" *ngFor="let logo of receivedPageData.assist_company; let i=index" [class.d-none]="i>=4"  [class.d-md-block]="i>=0">
+        <li class="nav-item text-center first-logo col-4 col-md-2 " *ngFor="let logo of receivedPageData.assist_company; let i=index" [class.d-none]="i>=3"  [class.d-md-block]="i>=0">
           <a class="nav-link pt-3 " href="{{ logo.link }}">
             <img src="{{ logo.logo }}">
           </a>
@@ -71,8 +71,9 @@
 
 
 <!--//////////////////////////////////////////////////////////////////-->
-<div class="row text-center1">
-  <h1 class="pb-5 pt-5 font-29">اخبار</h1>
+<div class="row text-center1 ">
+  <h1 class="pb-5 pt-5 font-29 text-center">اخبار</h1>
+
 </div>
 
 
@@ -119,7 +120,7 @@
 
 <!--//////////////////////////////////////////////////////////////////////-->
 <div class="row text-center1 ">
-  <a class="nav-link btn-news font-20" routerLink="/news">دیگر اخبار فاطر</a>
+  <a class="nav-link btn-news font-20  mx-auto" routerLink="/news">دیگر اخبار فاطر</a>
 </div>
 
 

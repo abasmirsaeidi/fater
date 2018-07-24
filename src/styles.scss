@@ -307,6 +307,7 @@ mdb-carousel .my-style .carousel-indicators .active {
   justify-content: space-between;
 }
 .text-center1 {
+  text-align: center;
   justify-content: center;
 }
 .btn-news {
@@ -869,6 +870,12 @@ mdb-carousel .carousel slide-point {
     margin-right: 0;
     margin-left: 0;
   }
+  .row.text-center1{
+    display: flex;
+    //flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
   .bg-footer2 {
     height: 108px;
     width: 100px;
@@ -935,7 +942,7 @@ mdb-carousel .carousel slide-point {
     position: absolute;
     right: 0;
     bottom: 268px;
-    left: 69px;
+    left: 93px;
     z-index: 15;
     display: flex;
     justify-content: center;

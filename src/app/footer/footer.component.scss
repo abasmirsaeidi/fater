@@ -63,7 +63,15 @@
 
 
 }
+@media ( min-width: 576px) {
 
+
+
+
+
+
+
+}
 
 
 
@@ -168,6 +176,11 @@
     position: relative;
     left: 0;
   }
+  .bg-footer2 {
+    position: relative;
+    right: 22px;
+    width: 345px;
+  }
 
 
 
@@ -185,7 +198,7 @@
     bottom: 10px;
     position: relative;
     left: 0;
-    min-width: 238px;
+    min-width: 263px;
   }
   .part1-footer{
     position: relative;
@@ -196,7 +209,11 @@
     position: relative;
     left: 0;
   }
-
+  .bg-footer2 {
+    position: relative;
+    right: 22px;
+    width: 345px;
+  }
 
 
 }
