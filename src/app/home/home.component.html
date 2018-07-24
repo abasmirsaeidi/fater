@@ -29,7 +29,7 @@
 <div class=" row ">
   <div class="container content px-15">
     <!--Carousel Wrapper-->
-    <mdb-carousel [isControls]="true" class="carousel slide carousel-fade my-style" [animation]="'fade'" [interval]="3000">
+    <mdb-carousel [isControls]="true" class="carousel slide carousel-fade my-style" [animation]="'fade'" [interval]="30000">
       <!--First slide-->
 
       <mdb-slide *ngFor="let proposition of receivedPageData.value_proposition" >
@@ -38,15 +38,15 @@
         </div>
         <div class="carousel-caption ">
           <div class="bg-cap">
-            <h1 class="font-29 text-right direction pb-3">{{ proposition.title }}</h1>
+            <h1 class="font-29 text-right direction pb-3 text-center">{{ proposition.title }}</h1>
             <h4 class="font-20  direction text-justify">{{ proposition.caption }}</h4>
           </div>
         </div>
       </mdb-slide>
-      <div class="bg-cap-z">
-      </div>
-    </mdb-carousel>
 
+    </mdb-carousel>
+    <div class="bg-cap-z">
+    </div>
   </div>
 </div>
 

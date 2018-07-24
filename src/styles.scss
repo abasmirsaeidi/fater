@@ -11,9 +11,7 @@
   direction: rtl !important;
 }
 body {
-    touch-action: unset !important;
-    user-select: unset !important;
-    -webkit-user-drag: unset !important;
+
   overflow-x: hidden;
   font-family: IRANSans;
   font-weight: 300;
@@ -539,7 +537,6 @@ mdb-carousel .carousel slide-point {
 .height-header {
   height: 65px;
   width: 100%;
-  background-color: sienna;
 }
 .btn-outline-info {
   border: #ffffff;
@@ -853,15 +850,12 @@ mdb-carousel .carousel slide-point {
 ///////////////////////////////////////////////////
 
 
+//*****************************max-576*************************************
 
 @media (max-width: 576px) {
-  mdb-carousel{
-    touch-action: none;
-    user-select: none;
-    -webkit-user-drag: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  .toolbar-home {
+    width: 90% !important;
   }
-
   .row{
     display: block;
     //flex-wrap: wrap;
@@ -884,8 +878,8 @@ mdb-carousel .carousel slide-point {
     overflow-x: hidden;
   }
   .img-value-proposition {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 28px;
+    padding-left: 28px;
     width: auto;
     height: 300px;
     position: relative;
@@ -922,7 +916,9 @@ mdb-carousel .carousel slide-point {
     height: 334px;
     margin-left: auto;
     margin-right: auto;
-    bottom: -106px;
+    bottom: -138px;
+    padding-right: 16px;
+    padding-left: 13px;
   }
   .my-style.carousel .carousel-inner {
     overflow: visible !important;
@@ -931,7 +927,7 @@ mdb-carousel .carousel slide-point {
   .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: 292px;
+    bottom: 268px;
     left: 69px;
     z-index: 15;
     display: flex;
@@ -954,14 +950,13 @@ mdb-carousel .carousel slide-point {
 }
 
 
-@media (min-width: 576px) {
-  mdb-carousel div{
-    touch-action: none;
-    user-select: none;
-    -webkit-user-drag: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
+//*****************************min-567*************************************
 
+@media (min-width: 576px) {
+  .toolbar-home {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .row{
     display: flex;
     //flex-wrap: wrap;
@@ -991,33 +986,32 @@ mdb-carousel .carousel slide-point {
   .mt-171{
     margin-top: 171px;
   }
-  .bg-cap-z {
-    z-index: -1;
-    height: 409px;
-    position: absolute;
-    bottom: -85px;
-    width: 100vw;
-    left: -122px;
-  }
   .img-value-proposition {
     width: 600px;
     height: 352px;
     position: relative;
     bottom: 52px;
-    //margin-right: 100px;
     margin-left: 0;
   }
 
   .img-value-proposition img{
-
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
-
   }
+  .bg-cap-z{
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 409px;
+    position: absolute;
+    background-color: #223b40;
+    left: 0;
+    bottom: -345px;  }
   .carousel-caption{
     position: absolute;
-    bottom: -246px;
+    bottom: -265px;
     left: -4px;
     z-index: 10;
     padding-top: 20px;
@@ -1030,7 +1024,7 @@ mdb-carousel .carousel slide-point {
   .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: 158px;
+    bottom: 134px;
     left: 81px;
   }
 
@@ -1040,7 +1034,15 @@ mdb-carousel .carousel slide-point {
 
 }
 
+
+
+//*****************************min-768*************************************
+
 @media (min-width: 768px) {
+  .toolbar-home {
+    margin-left: 0;
+    margin-right: 0;
+  }
   body {
     overflow-x: hidden;
   }
@@ -1079,7 +1081,7 @@ mdb-carousel .carousel slide-point {
   .carousel-indicators {
     position: absolute;
     right: 0;
-    bottom: 158px;
+    bottom: 134px;
     left: 81px;
   }
 
@@ -1087,19 +1089,39 @@ mdb-carousel .carousel slide-point {
     z-index: -1;
     height: 409px;
     position: absolute;
-    bottom: -85px;
+    bottom: -331px;
     width: 715px;
-    left: 0;
-
+    left: auto;
+    right: auto;
   }
   .mt-171{
     margin-top: 171px;
   }
+  .carousel-caption{
+    position: absolute;
+    bottom: -268px;
+    left: -4px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    width: 516px;
+    height: 400px;
+  }
+
 
 
 }
 
+
+//*****************************min-992*************************************
+
 @media ( min-width: 992px) {
+  .toolbar-home {
+    margin-left: 0;
+    margin-right: 0;
+  }
   body {
     overflow-x: hidden;
   }
@@ -1145,21 +1167,28 @@ mdb-carousel .carousel slide-point {
 
   .bg-cap-z {
     z-index: -1;
-    height: 409px;
-    position: absolute;
-    bottom: -85px;
-    width: 705px;
-    left: 0;
-
+    width: 885px;
+    height: 375px;
+    position: relative;
+    bottom: 530px;
+    background-color: #223b40;
+    left: 43px;
+    right: 0;
   }
-.card{
-  width: 288px;
-}
+  .card{
+    width: 288px;
+  }
 
 
 }
 
+
+//*****************************min-1200*************************************
 @media (min-width: 1200px) {
+  .toolbar-home {
+    margin-left: 0;
+    margin-right: 0;
+  }
   body {
     overflow-x: hidden;
   }
@@ -1186,11 +1215,10 @@ mdb-carousel .carousel slide-point {
   .bg-cap-z {
     z-index: -1;
     height: 409px;
-    position: absolute;
-    bottom: -85px;
-    width: 705px;
-    left: 0;
-
+    width: 1091px;
+    position: relative;
+    bottom: 528px;
+    left: 44px;
   }
   .logos-home.container{
     max-width: 1166px;
@@ -1218,9 +1246,15 @@ mdb-carousel .carousel slide-point {
 .carousel-inner .carousel-item {
   overflow: visible;
 }
-mdb-carousel{
-  touch-action: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+.carousel.slide.carousel-fade {
+  touch-action: auto !important;
+}
+
+
+
+.carousel-control-prev-icon{
+  display: none;
+}
+.carousel-control-next-icon{
+  display: none;
 }
