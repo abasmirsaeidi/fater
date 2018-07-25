@@ -63,15 +63,49 @@
 
 
 }
-@media ( min-width: 576px) {
+@media ( max-width: 576px) {
+  .part4-footer {
+    text-align: justify;
+    direction: rtl;
+    line-height: 27px;
+    max-width: 549px;
+    width: auto;
+    position: relative;
+    bottom: 209px;
+    margin: 0 auto
+  }
+  .part1-footer{
+    position: relative;
+    left: -7;
+    bottom: -220px;  }
+  .part3-footer{
+    position: relative;
+    bottom: 144px;
+    left: -215px;
+  }
+  .part2-footer{
+    position: relative;
+    left: 0;
+    bottom: 217px;
 
-
+  }
+  .bg-footer2 {
+    height: 108px;
+    border: solid 2px rgba(139, 238, 255, 1.0);
+    padding: 12px !important;
+    max-width: 551px;
+    width: auto;
+  }
 
 
 
 
 
 }
+
+
+
+
 
 
 

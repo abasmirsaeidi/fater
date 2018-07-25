@@ -26,6 +26,7 @@ import { CoursesListComponent } from './courses-list/courses-list.component';
   ],
 
   imports: [
+
     HttpClientModule,
     FooterModule,
     BrowserModule,

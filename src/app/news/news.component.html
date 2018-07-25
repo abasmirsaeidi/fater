@@ -1,241 +1,293 @@
 <div class="height-header"></div>
 
+<!--Carousel Wrapper-->
+<mdb-carousel  class="" [isControls]="true" [animation]="'slide'" [interval]="3000">
+  <!--First slide-->
+  <mdb-slide class=""  >
+    <img class="d-block w-100 news-slider" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b053bed12dba7000bc2aef2/5b053bee12dba7000cecf353/img/desktop-rectangle-3.png" alt="First slide">
+  </mdb-slide >
+  <!--/First slide-->
+  <!--Second slide-->
+  <mdb-slide class="" >
+    <img class="d-block w-100 news-slider" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-photo-1514043454212-14c181f46583.png" alt="Second slide">
+  </mdb-slide>
+  <!--/Second slide-->
+  <!--Third slide-->
+  <mdb-slide class="" >
+    <img class="d-block w-100 news-slider" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b053bed12dba7000bc2aef2/5b053bee12dba7000cecf353/img/desktop-rectangle-3.png" alt="Third slide">
+  </mdb-slide>
+  <!--/Third slide-->
+</mdb-carousel>
+<!--/.Carousel Wrapper-->
 
-<!--<div class="container-sec1 ">-->
-
-  <!--Carousel Wrapper-->
-  <mdb-carousel  class="news-slider" [isControls]="true" [animation]="'slide'" [interval]="3000">
-    <!--First slide-->
-    <mdb-slide class="news-slider"  >
-      <img class="d-block w-100" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b02c8b63a51d5000bd4755c/img/desktop-rectangle-3.png" alt="First slide">
-    </mdb-slide >
-    <!--/First slide-->
-    <!--Second slide-->
-    <mdb-slide class="news-slider" >
-      <img class="d-block w-100" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-photo-1514043454212-14c181f46583.png" alt="Second slide">
-    </mdb-slide>
-    <!--/Second slide-->
-    <!--Third slide-->
-    <mdb-slide class="news-slider" >
-      <img class="d-block w-100" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b02c8b63a51d5000bd4755c/img/desktop-rectangle-3.png" alt="Third slide">
-    </mdb-slide>
-    <!--/Third slide-->
-  </mdb-carousel>
-  <!--/.Carousel Wrapper-->
-
-
-<!--</div>-->
 
 <!--&lt;!&ndash;///////////////////////////////////////////&ndash;&gt;-->
 
-<div class="card-news ">
+<div class="row">
+  <div class="container home-cards">
 
-<div class="container-two pb-5 row">
+    <div class="col-xs-4  col-xl-4 col-lg-4 col-sm-6 d-inline-block mb-0 mb-sm-5  " *ngFor="let program of receivedPageData.other_program; let i=index ">
 
-  <div class="card news-card news-card-shadow">
-    <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 2.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
+      <!--Card-->
+      <div class="card news-card-shadow mx-auto" [class.d-none]="i>=2"  [class.d-md-block]="i<=8" [class.d-lg-none]="i>=9">
+        <!--[class.d-lg-block]="i<=8">-->
+        <!--Card image-->
+        <div class="view  waves-light img-of-card" mdbWavesEffect>
+          <img src="{{ program.img }}" class="img-fluid  ffff" alt="Card image with a tree in a middle of a lake.">
+          <a>
+            <div class="mask"></div>
+          </a>
+        </div>
+        <span>   <div class="share-icon-div ">
+            <a class="activator p-3 mr-2  share-icon" routerLink="/information">
+              <i class="fa fa-share-alt rotate-icon "></i>
+            </a>
+          </div>
+        </span>
+
+        <!--Card content-->
+        <div class="card-body">
+          <!--Text-->
+          <p class="card-text card-text1 font-18">{{ program.caption }}</p>
+        </div>
+        <!--Card content-->
+
       </div>
-      <p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+      <!--/.Card-->
     </div>
-    <!--/.Card content-->
   </div>
-
-  <div class="card news-card news-card-shadow">
-    <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 1.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width ">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
-      </div>
-      <p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
-
-
-  <div class="card news-card news-card-shadow">
-    <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
-      </div>
-      <p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
-
 </div>
-<div class="container-two pb-5 row">
-
-  <div class="card news-card news-card-shadow">
-    <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 5.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
-      </div>
-      <p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
-
-  <div class="card news-card news-card-shadow">
-    <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 4.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width ">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
-      </div>
-      <p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
 
 
-  <div class="card news-card news-card-shadow">
-    <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 3.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
-      </div>
-      <p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
-
-</div>
-<div class="container-two  row">
-
-  <div class="card news-card news-card-shadow">
-    <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 8.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
-      </div>
-      <p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
-
-  <div class="card news-card news-card-shadow">
-    <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 7.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width ">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
-      </div>
-      <p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
 
 
-  <div class="card news-card news-card-shadow">
-    <!--Card image-->
-    <div class="view overlay waves-light" mdbWavesEffect>
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 6.png" class="img-fluid" alt="fern">
-      <a>
-        <div class="mask rgba-white-slight"></div>
-      </a>
-    </div>
-    <!--/.Card image-->
-    <!--Card content-->
-    <div class="card-body card-body-width">
-      <div class="share-icon-div ">
-        <a class="activator p-3 mr-2  share-icon">
-          <i class="fa fa-share-alt rotate-icon "></i>
-        </a>
-      </div>
-      <p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-    </div>
-    <!--/.Card content-->
-  </div>
 
-</div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--//////////////////////////////////////////////-->
+<!--<div class="card-news ">-->
+
+<!--<div class="container-two pb-5 row">-->
+
+  <!--<div class="card news-card news-card-shadow">-->
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<div class="view overlay waves-light" mdbWavesEffect>-->
+      <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 2.png" class="img-fluid" alt="fern">-->
+      <!--<a>-->
+        <!--<div class="mask rgba-white-slight"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class="card-body card-body-width">-->
+      <!--<div class="share-icon-div ">-->
+        <!--<a class="activator p-3 mr-2  share-icon">-->
+          <!--<i class="fa fa-share-alt rotate-icon "></i>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+  <!--</div>-->
+
+  <!--<div class="card news-card news-card-shadow">-->
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<div class="view overlay waves-light" mdbWavesEffect>-->
+      <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 1.png" class="img-fluid" alt="fern">-->
+      <!--<a>-->
+        <!--<div class="mask rgba-white-slight"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class="card-body card-body-width ">-->
+      <!--<div class="share-icon-div ">-->
+        <!--<a class="activator p-3 mr-2  share-icon">-->
+          <!--<i class="fa fa-share-alt rotate-icon "></i>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+  <!--</div>-->
+
+
+  <!--<div class="card news-card news-card-shadow">-->
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<div class="view overlay waves-light" mdbWavesEffect>-->
+      <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy.png" class="img-fluid" alt="fern">-->
+      <!--<a>-->
+        <!--<div class="mask rgba-white-slight"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class="card-body card-body-width">-->
+      <!--<div class="share-icon-div ">-->
+        <!--<a class="activator p-3 mr-2  share-icon">-->
+          <!--<i class="fa fa-share-alt rotate-icon "></i>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+  <!--</div>-->
+
+<!--</div>-->
+<!--<div class="container-two pb-5 row">-->
+
+  <!--<div class="card news-card news-card-shadow">-->
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<div class="view overlay waves-light" mdbWavesEffect>-->
+      <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 5.png" class="img-fluid" alt="fern">-->
+      <!--<a>-->
+        <!--<div class="mask rgba-white-slight"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class="card-body card-body-width">-->
+      <!--<div class="share-icon-div ">-->
+        <!--<a class="activator p-3 mr-2  share-icon">-->
+          <!--<i class="fa fa-share-alt rotate-icon "></i>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+  <!--</div>-->
+
+  <!--<div class="card news-card news-card-shadow">-->
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<div class="view overlay waves-light" mdbWavesEffect>-->
+      <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 4.png" class="img-fluid" alt="fern">-->
+      <!--<a>-->
+        <!--<div class="mask rgba-white-slight"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class="card-body card-body-width ">-->
+      <!--<div class="share-icon-div ">-->
+        <!--<a class="activator p-3 mr-2  share-icon">-->
+          <!--<i class="fa fa-share-alt rotate-icon "></i>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+  <!--</div>-->
+
+
+  <!--<div class="card news-card news-card-shadow">-->
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<div class="view overlay waves-light" mdbWavesEffect>-->
+      <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 3.png" class="img-fluid" alt="fern">-->
+      <!--<a>-->
+        <!--<div class="mask rgba-white-slight"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class="card-body card-body-width">-->
+      <!--<div class="share-icon-div ">-->
+        <!--<a class="activator p-3 mr-2  share-icon">-->
+          <!--<i class="fa fa-share-alt rotate-icon "></i>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+  <!--</div>-->
+
+<!--</div>-->
+<!--<div class="container-two  row">-->
+
+  <!--<div class="card news-card news-card-shadow">-->
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<div class="view overlay waves-light" mdbWavesEffect>-->
+      <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 8.png" class="img-fluid" alt="fern">-->
+      <!--<a>-->
+        <!--<div class="mask rgba-white-slight"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class="card-body card-body-width">-->
+      <!--<div class="share-icon-div ">-->
+        <!--<a class="activator p-3 mr-2  share-icon">-->
+          <!--<i class="fa fa-share-alt rotate-icon "></i>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+  <!--</div>-->
+
+  <!--<div class="card news-card news-card-shadow">-->
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<div class="view overlay waves-light" mdbWavesEffect>-->
+      <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 7.png" class="img-fluid" alt="fern">-->
+      <!--<a>-->
+        <!--<div class="mask rgba-white-slight"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class="card-body card-body-width ">-->
+      <!--<div class="share-icon-div ">-->
+        <!--<a class="activator p-3 mr-2  share-icon">-->
+          <!--<i class="fa fa-share-alt rotate-icon "></i>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+  <!--</div>-->
+
+
+  <!--<div class="card news-card news-card-shadow">-->
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<div class="view overlay waves-light" mdbWavesEffect>-->
+      <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02c4c93a51d5000d9d9c29/5b03c282fda4ae000d6d20ac/img/desktop-rectangle-13-copy 6.png" class="img-fluid" alt="fern">-->
+      <!--<a>-->
+        <!--<div class="mask rgba-white-slight"></div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class="card-body card-body-width">-->
+      <!--<div class="share-icon-div ">-->
+        <!--<a class="activator p-3 mr-2  share-icon">-->
+          <!--<i class="fa fa-share-alt rotate-icon "></i>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<p class="card-text card-text1">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+  <!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
 
 <!--/////////////////////////////////////-->
 
 
 <div class="row text-center1 add-btn ">
-  <a class="nav-link btn-news font-20" routerLink="/news">بیشتر</a>
+  <a class="nav-link btn-news font-20"  >
+     <!--(click)="OnCreation_List_Cards()"-->
+  >بیشتر</a>
 </div>
+<!--<div class="" *ngIf="cadrcreated">{{cards}}-->
+
+<!--</div>-->

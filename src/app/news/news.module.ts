@@ -13,7 +13,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     MDBBootstrapModule.forRoot(),
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+
   ],
   declarations: [
     NewsComponent

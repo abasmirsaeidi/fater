@@ -1,0 +1,249 @@
+mdb-carousel{
+  position: relative;
+  bottom: 68px !important;
+}
+mdb-carousel .carousel-indicators {
+  position: relative !important;
+  top: 542px!important;
+  left: 35px!important;
+  background-color: navajowhite!important;
+}
+.news{
+  height: 711px;
+}
+body {
+  touch-action: unset !important;
+  user-select: unset !important;
+  -webkit-user-drag: unset !important;
+  overflow-x: hidden;
+  font-family: IRANSans;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.toolbar-home{
+  width: auto;
+  height: 95px;
+  border-radius: 200px;
+  margin: auto;
+  position: relative;
+  bottom: 48px;
+  justify-content: center;
+}
+.site-color-light{
+  background-color: rgb(70, 119, 126);
+}
+
+.first-logo{
+  margin: 10px 0;
+  align-items: center;
+  width: auto;
+}
+.w-200{
+  width: 22%;
+}
+.m-auto{
+  position: relative;
+  right: 75px;
+}
+
+.carousel-caption h4{
+  line-height: 30px;
+
+}
+
+.navbar-nav.logo{
+  flex-direction: row ;
+}
+
+
+@media (min-width: 768px) {
+  .carousel.my-style{
+    touch-action: auto;
+    user-select: all;
+    -webkit-user-drag: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  mdb-carousel .slide-point .carousel-control-prev {
+    display: none;
+  }
+  mdb-carousel .slide-point .carousel-control-next {
+    display: none;
+  }
+
+  .logos-home.container{
+    max-width: 740px;
+    min-width: 740px;
+  }
+  .carousel-caption {
+    height: 400px;
+    width: 577px;
+    top: 430px;
+    left: 75px;
+  }
+  a.carousel-control-prev {
+    display: none;
+  }
+  a.carousel-control-next {
+    display: none;
+  }
+
+
+
+}
+
+
+
+
+@media (min-width: 992px){
+  .carousel.my-style{
+    touch-action: auto;
+    user-select: all;
+    -webkit-user-drag: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .logos-home.container{
+    max-width: 960px;
+    min-width: 960px;
+  }
+  a.carousel-control-prev {
+    display: none;
+  }
+  a.carousel-control-next {
+    display: none;
+  }
+  .container.home-cards{
+    min-width: 988px !important;
+    max-width: 988px !important;
+  }
+  .container{
+    main-width: 960px !important;
+    max-width: 960px !important;
+
+  }
+  .img-of-card{
+    //height:  212px !important;
+  }
+  .caption-one h1 {
+    padding-bottom: 15px;
+    text-align: right;
+  }
+  mdb-carousel.my-style .carousel-indicators ol{
+    top: 26px !important;
+    left: 125px !important;
+  }
+  mdb-carousel .my-style .carousel-indicators li {
+    position: relative;
+    bottom: 482px;
+    right: 44px;
+  }
+  .width-cars {
+    width: 520PX;
+    height: 385px;
+    position: relative;
+    top: 27px;
+    left: 75px;
+  }
+
+  .carousel-caption{
+    position: relative;
+    left: 24px;
+    width: 392px;
+    top: 5px;
+  }
+  .carousel-indicators{
+    position: relative;
+    top: 26px !important;
+    left: 125px !important;
+  }
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+  a.carousel-control-prev {
+    display: none;
+  }
+  a.carousel-control-next {
+    display: none;
+  }
+
+  .carousel-caption{
+    position: relative;
+    left: 50px;
+    width: 450px;
+  }
+  .carousel-indicators{
+    position: relative;
+    top: 26px !important;
+    left: 125px !important;
+  }
+
+  mdb-carousel .my-style .carousel-indicators li {
+    position: relative;
+    bottom: 482px;
+    right: 0 !important;
+  }
+
+  .container{
+    main-width: 1166px !important;
+    max-width: 1166px !important;
+
+  }
+  .card{
+    width: 340px;
+  }
+  .container.home-cards{
+    min-width: 1220px !important;
+    max-width: 1220px !important;
+  }
+
+  .width-cars {
+    width: 1125PX;
+    height: 385px;
+    position: relative;
+    top: 20px;
+    left: 75px;
+  }
+
+
+
+
+
+
+}
+
+
+mdb-carousel{
+  position: relative;
+  bottom: 68px !important;
+}
+mdb-carousel .carousel-indicators {
+  position: relative !important;
+  top: 542px!important;
+  left: 35px!important;
+  background-color: navajowhite!important;
+}
+///////////////////////////////////////////////////////////////
+
+
+.card {
+  width: 365px !important;
+  max-height: 183px!important;
+  background-color: #223b40!important;
+}
+.img-of-card {
+  height: 180px!important;
+  position: relative!important;
+  left: 180px!important;
+  width: 185px!important;
+  top: 24px!important;
+}
+.card-body{
+  position: relative!important;
+  bottom: 176px!important;
+  max-width: 160px!important;
+}

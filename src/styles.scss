@@ -341,8 +341,19 @@ footer {
 
 }
 
-
-.width-p {
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 268px;
+  left: 93px;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}.width-p {
   //margin: 0;
 }
 .part1-footer {
@@ -473,9 +484,10 @@ mdb-carousel .slide-point .carousel-control-next {
 //  z-index: 1000 !important;
 //}
 
-.card-pic-collections {
+.card-img-collections {
   height: 180px;
-  width: 190px;
+  max-width: 190px;
+  width: auto;
   position: relative;
   top: 22px;
   float: right;
@@ -495,8 +507,7 @@ mdb-carousel .slide-point .carousel-control-next {
 }
 .width-card-collections {
   max-width: 320px;
-  //height: 183px;
-  margin-bottom: -42px;
+  width: auto;
 }
 .card-body-collections {
   width: 365px;
@@ -568,11 +579,7 @@ mdb-carousel .carousel slide-point {
   margin-bottom: 35px;
   padding-right: 44px;
 }
-.card-news {
-  position: relative;
-  top: 210px;
-  padding-bottom: 100px;
-}
+
 .add-btn {
   position: relative;
   bottom: 20px;
@@ -626,9 +633,9 @@ mdb-carousel .carousel slide-point {
   font-size: 20px !important;
 }
 .news-slider {
-  min-height: 455px;
-  max-height: 455px;
+  height: 455px;
   width: 100vw;
+  object-fit: cover;
 }
 .news-slider img {
   min-height: 455px;
@@ -808,44 +815,6 @@ mdb-carousel .carousel slide-point {
 
 
 
-//////////////////////////////////////////
-/*
-@media (min-width: 768px)
-<style>…</style>
-.img-value-proposition {
-    width: 573px;
-    height: 352px;
-    position: relative;
-    bottom: 52px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 158px;
-    left: 81px;
-    z-index: 15;
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
-
-    margin-top: 171px;
-
-    .carousel-caption[_ngcontent-c3] {
-    height: 400px;
-    width: 579px;
-    top: 401px;
-    /* right: 60px !important; */
-//left: 75px;
-
-
-
-
 
 
 ///////////////////////////////////////////////////
@@ -938,19 +907,7 @@ mdb-carousel .carousel slide-point {
     overflow: visible !important;
     height: 637px;
   }
-  .carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 268px;
-    left: 93px;
-    z-index: 15;
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
-  }
+
   .container {
     width: 100%;
     padding-right: 0;
@@ -1051,7 +1008,6 @@ mdb-carousel .carousel slide-point {
 
 
 }
-
 
 
 //*****************************min-768*************************************
@@ -1257,6 +1213,12 @@ mdb-carousel .carousel slide-point {
 
 
 }
+
+
+///////////////////////////////////////////////////////////////////
+
+
+
 
 .img-value-proposition img{
   width: 100%;

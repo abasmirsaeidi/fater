@@ -1,8 +1,9 @@
 .banner{
-  background: url("https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-photo-1514043454212-14c181f46583.png")0 0 /cover;
+  background: url("https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-photo-1514043454212-14c181f46583.png")center  /cover;
   direction: rtl;
   height: 416px;
   min-width: 100vw;
+  object-fit: cover;
 }
 .news{
   height: 711px;
@@ -53,6 +54,23 @@ body {
 }
 
 
+
+
+
+
+//*********************************************max-567***********************************************
+
+@media (max-width: 567px) {
+
+}
+//*********************************************min-567***********************************************
+
+@media (min-width: 567px) {
+
+}
+
+//*********************************************min-768***********************************************
+
 @media (min-width: 768px) {
   .carousel.my-style{
     touch-action: auto;
@@ -91,6 +109,7 @@ body {
 
 
 
+//*********************************************min-992***********************************************
 
 @media (min-width: 992px){
   .carousel.my-style{
@@ -157,6 +176,8 @@ body {
 }
 
 
+
+//*********************************************min-1200***********************************************
 
 @media (min-width: 1200px) {
 

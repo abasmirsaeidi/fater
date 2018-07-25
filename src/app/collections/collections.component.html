@@ -1,19 +1,19 @@
 <div class="height-header"></div>
 <!--Carousel Wrapper-->
-<mdb-carousel  class="news-slider" [isControls]="true" [animation]="'slide'" [interval]="3000">
+<mdb-carousel  class="" [isControls]="true" [animation]="'slide'" [interval]="3000">
   <!--First slide-->
-  <mdb-slide class="news-slider"  >
-    <img class="d-block w-100" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b053bed12dba7000bc2aef2/5b053bee12dba7000cecf353/img/desktop-rectangle-3.png" alt="First slide">
+  <mdb-slide class=""  >
+    <img class="d-block w-100 news-slider" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b053bed12dba7000bc2aef2/5b053bee12dba7000cecf353/img/desktop-rectangle-3.png" alt="First slide">
   </mdb-slide >
   <!--/First slide-->
   <!--Second slide-->
-  <mdb-slide class="news-slider" >
-    <img class="d-block w-100" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-photo-1514043454212-14c181f46583.png" alt="Second slide">
+  <mdb-slide class="" >
+    <img class="d-block w-100 news-slider" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-photo-1514043454212-14c181f46583.png" alt="Second slide">
   </mdb-slide>
   <!--/Second slide-->
   <!--Third slide-->
-  <mdb-slide class="news-slider" >
-    <img class="d-block w-100" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b053bed12dba7000bc2aef2/5b053bee12dba7000cecf353/img/desktop-rectangle-3.png" alt="Third slide">
+  <mdb-slide class="" >
+    <img class="d-block w-100 news-slider" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b053bed12dba7000bc2aef2/5b053bee12dba7000cecf353/img/desktop-rectangle-3.png" alt="Third slide">
   </mdb-slide>
   <!--/Third slide-->
 </mdb-carousel>
@@ -22,86 +22,81 @@
 
 
 <!--////////////////////////////////////////////////////-->
-
-
-
-<!--<div class="collections">-->
-<!---->
 <div class="row">
-  <div class="  m-auto container container-collections  ">
+  <div class="container home-cards">
 
-    <div class="width-card-collections col-xl-4">
+    <div class="col-xs-4  col-xl-4 col-lg-4 col-sm-6 d-inline-block mb-0 mb-sm-5  " *ngFor="let program of receivedPageData.other_program; let i=index ">
 
-      <!--Card image-->
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png" class="img-fluid card-pic-collections shadow-card" alt="fern">
-      <!--<a>-->
-      <!--<div class="mask rgba-white-slight card-pic-collections"></div>-->
-      <!--</a>-->
-      <!--/.Card image-->
+      <!--Card-->
+      <div class="card news-card-shadow mx-auto" [class.d-none]="i>=2"  [class.d-md-block]="i<=8" [class.d-lg-none]="i>=9">
+        <!--[class.d-lg-block]="i<=8">-->
+        <!--Card image-->
+        <div class="view  waves-light img-of-card" mdbWavesEffect>
+          <img src="{{ program.img }}" class="img-fluid  ffff" alt="Card image with a tree in a middle of a lake.">
+          <a>
+            <div class="mask"></div>
+          </a>
+        </div>
+        <span>   <div class="share-icon-div ">
+            <a class="activator p-3 mr-2  share-icon" routerLink="/information">
+              <i class="fa fa-share-alt rotate-icon "></i>
+            </a>
+          </div>
+        </span>
 
-      <!--Card content-->
-      <div class=" card-body-collections col-xl-3">
-
-        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
-          <!--/.Card content-->
-          <!--<div class="row text-center1 ">-->
-          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
-          <!--</div>-->
-          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
-
-
-      </div>
-    </div>
-
-
-    <div class="width-card-collections col-xl-4">
-
-      <!--Card image-->
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy.png" class="img-fluid card-pic-collections shadow-card" alt="fern">
-      <!--<a>-->
-      <!--<div class="mask rgba-white-slight card-pic-collections"></div>-->
-      <!--</a>-->
-      <!--/.Card image-->
-
-      <!--Card content-->
-      <div class=" card-body-collections">
-        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
-          <!--/.Card content-->
-          <!--<div class="row text-center1 ">-->
-          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
-          <!--</div>-->
-          <button type="button" class="btn btn-add btn-outline btn-rounded font-16 " >بیشتر</button>
-
+        <!--Card content-->
+        <div class="card-body">
+          <!--Text-->
+          <p class="card-text card-text1 font-18">{{ program.caption }}</p>
+        </div>
+        <!--Card content-->
 
       </div>
-    </div>
-
-
-    <div class="width-card-collections col-xl-4">
-
-      <!--Card image-->
-      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b02b7c3c1baec000b6a06b0/img/desktop-rectangle-6%203.png" class="img-fluid card-pic-collections shadow-card" alt="fern">
-      <!--<a>-->
-      <!--<div class="mask rgba-white-slight card-pic-collections"></div>-->
-      <!--</a>-->
-      <!--/.Card image-->
-
-      <!--Card content-->
-      <div class=" card-body-collections">
-        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
-          <!--/.Card content-->
-          <!--<div class="row text-center1 ">-->
-          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
-          <!--</div>-->
-          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
-
-
-      </div>
+      <!--/.Card-->
     </div>
   </div>
-
-<!--</div>-->
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--<div class="width-card-collections card d-inline-block col-xs-4  col-xl-4 col-lg-4 col-sm-6" >-->
+
+    <!--&lt;!&ndash;Card image&ndash;&gt;-->
+    <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"-->
+         <!--class="img-fluid card-img-collections shadow-card" alt="fern">-->
+    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+    <!--<div class=" card-body-collections card-body ">-->
+
+      <!--<p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی-->
+        <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="row text-center1 ">&ndash;&gt;-->
+        <!--&lt;!&ndash;<a class="nav-link btn-add font-16">بیشتر</a>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>-->
+
+
+
+    <!--</div>-->
+    <!--&lt;!&ndash;Card content&ndash;&gt;-->
+  <!--</div>-->
+
 
 
 <!--///////////////////////-->
