@@ -22,38 +22,369 @@
 
 
 <!--////////////////////////////////////////////////////-->
+<!--<div class="row">-->
+  <!--<div class="container home-cards">-->
+
+    <!--<div class="col-xs-4  col-xl-4 col-lg-6 col-sm-6 d-inline-block mb-0 mb-sm-5  " *ngFor="let program of receivedPageData.other_program; let i=index ">-->
+
+      <!--&lt;!&ndash;Card&ndash;&gt;-->
+      <!--<div class="card news-card-shadow mx-auto" [class.d-none]="i>=2"  [class.d-md-block]="i<=8" [class.d-lg-none]="i>=9">-->
+        <!--&lt;!&ndash;[class.d-lg-block]="i<=8">&ndash;&gt;-->
+        <!--&lt;!&ndash;Card image&ndash;&gt;-->
+        <!--<div class="view  waves-light img-of-card" mdbWavesEffect>-->
+          <!--<img src="{{ program.img }}" class="img-fluid  ffff" alt="Card image with a tree in a middle of a lake.">-->
+          <!--<a>-->
+            <!--<div class="mask"></div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!--<span>   <div class="share-icon-div ">-->
+            <!--<a class="activator p-3 mr-2  share-icon" routerLink="/information">-->
+            <!--بیشتر-->
+            <!--</a>-->
+          <!--</div>-->
+        <!--</span>-->
+
+        <!--&lt;!&ndash;Card content&ndash;&gt;-->
+        <!--<div class="card-body">-->
+          <!--&lt;!&ndash;Text&ndash;&gt;-->
+          <!--<p class="card-text card-text1 font-18">{{ program.caption }}</p>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;Card content&ndash;&gt;-->
+
+      <!--</div>-->
+      <!--&lt;!&ndash;/.Card&ndash;&gt;-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+<!--/////////////////////////////////////////////////////////////-->
 <div class="row">
-  <div class="container home-cards">
-
-    <div class="col-xs-4  col-xl-4 col-lg-4 col-sm-6 d-inline-block mb-0 mb-sm-5  " *ngFor="let program of receivedPageData.other_program; let i=index ">
-
-      <!--Card-->
-      <div class="card news-card-shadow mx-auto" [class.d-none]="i>=2"  [class.d-md-block]="i<=8" [class.d-lg-none]="i>=9">
-        <!--[class.d-lg-block]="i<=8">-->
+  <div class="container collection-cards px-1">
+    <div class="c d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 mb-5 " >
+        <div class="width-card-collections card " >
+        </div>
         <!--Card image-->
-        <div class="view  waves-light img-of-card" mdbWavesEffect>
-          <img src="{{ program.img }}" class="img-fluid  ffff" alt="Card image with a tree in a middle of a lake.">
-          <a>
-            <div class="mask"></div>
-          </a>
-        </div>
-        <span>   <div class="share-icon-div ">
-            <a class="activator p-3 mr-2  share-icon" routerLink="/information">
-              <i class="fa fa-share-alt rotate-icon "></i>
-            </a>
-          </div>
-        </span>
+        <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+             class="img-fluid card-img-collections shadow-card" alt="fern">
+        <!--/.Card image-->
 
         <!--Card content-->
-        <div class="card-body">
-          <!--Text-->
-          <p class="card-text card-text1 font-18">{{ program.caption }}</p>
+        <div class=" card-body-collections card-body ">
+
+          <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+            <!--/.Card content-->
+            <!--<div class="row text-center1 ">-->
+            <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+            <!--</div>-->
+            <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
         </div>
         <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
 
       </div>
-      <!--/.Card-->
+      <!--Card content-->
     </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+    <div class="cardd d-inline-block col-xs-4  col-xl-4 col-lg-6 col-sm-6 my-5" >
+      <div class="width-card-collections card " >
+      </div>
+      <!--Card image-->
+      <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"
+           class="img-fluid card-img-collections shadow-card" alt="fern">
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <div class=" card-body-collections card-body ">
+
+        <p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی
+          <!--/.Card content-->
+          <!--<div class="row text-center1 ">-->
+          <!--<a class="nav-link btn-add font-16">بیشتر</a>-->
+          <!--</div>-->
+          <button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>
+
+
+
+      </div>
+      <!--Card content-->
+    </div>
+
+
+
+
+
+
+    <!--<div class="width-card-collections card d-inline-block col-xs-4  col-xl-4 col-lg-4 col-sm-6" >-->
+
+  <!--&lt;!&ndash;Card image&ndash;&gt;-->
+  <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"-->
+       <!--class="img-fluid card-img-collections shadow-card" alt="fern">-->
+  <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+
+  <!--&lt;!&ndash;Card content&ndash;&gt;-->
+  <!--<div class=" card-body-collections card-body ">-->
+
+    <!--<p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی-->
+      <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+      <!--&lt;!&ndash;<div class="row text-center1 ">&ndash;&gt;-->
+      <!--&lt;!&ndash;<a class="nav-link btn-add font-16">بیشتر</a>&ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--<button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>-->
+
+
+
+  <!--</div>-->
+  <!--&lt;!&ndash;Card content&ndash;&gt;-->
+<!--</div>-->
+<!--<div class="width-card-collections card d-inline-block col-xs-4  col-xl-4 col-lg-4 col-sm-6" >-->
+
+  <!--&lt;!&ndash;Card image&ndash;&gt;-->
+  <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"-->
+       <!--class="img-fluid card-img-collections shadow-card" alt="fern">-->
+  <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
+
+  <!--&lt;!&ndash;Card content&ndash;&gt;-->
+  <!--<div class=" card-body-collections card-body ">-->
+
+    <!--<p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی-->
+      <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
+      <!--&lt;!&ndash;<div class="row text-center1 ">&ndash;&gt;-->
+      <!--&lt;!&ndash;<a class="nav-link btn-add font-16">بیشتر</a>&ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--<button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>-->
+
+
+
+  <!--</div>-->
+  <!--&lt;!&ndash;Card content&ndash;&gt;-->
+<!--</div>-->
   </div>
 </div>
 
@@ -71,31 +402,6 @@
 
 
 
-
-
-
-  <!--<div class="width-card-collections card d-inline-block col-xs-4  col-xl-4 col-lg-4 col-sm-6" >-->
-
-    <!--&lt;!&ndash;Card image&ndash;&gt;-->
-    <!--<img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png"-->
-         <!--class="img-fluid card-img-collections shadow-card" alt="fern">-->
-    <!--&lt;!&ndash;/.Card image&ndash;&gt;-->
-
-    <!--&lt;!&ndash;Card content&ndash;&gt;-->
-    <!--<div class=" card-body-collections card-body ">-->
-
-      <!--<p class="card-text card-text-collections font-16 white-text">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی-->
-        <!--&lt;!&ndash;/.Card content&ndash;&gt;-->
-        <!--&lt;!&ndash;<div class="row text-center1 ">&ndash;&gt;-->
-        <!--&lt;!&ndash;<a class="nav-link btn-add font-16">بیشتر</a>&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--<button type="button" class="btn btn-add btn-outline btn-rounded font-16" >بیشتر</button>-->
-
-
-
-    <!--</div>-->
-    <!--&lt;!&ndash;Card content&ndash;&gt;-->
-  <!--</div>-->
 
 
 

@@ -4,3 +4,163 @@
   margin: auto;
   margin-top: 50px;
 }
+//*******************************share-icon*********************************
+.share-icon {
+  z-index: 500;
+  font-family: normal;
+  left: 3px;
+  font-size: 16px;
+  position: relative;
+  top: 18px;
+  color: #000;
+  text-decoration: none;
+}
+.share-icon:hover {
+  color: #000;
+}
+
+.share-icon-div {
+  position: relative;
+  bottom: 27px;
+  left: 25px;
+  height: 52px !important;
+  width: 52px !important;
+  border-radius: 50%;
+  background-color: #01b8ca;
+  z-index: 500;
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.6);
+}
+.share-icon .fa-share-alt {
+  font-size: 15px;
+}
+.rotate-icon {
+  transform: rotate(-90deg);
+}
+.information-image {
+  height: 303px;
+  width: 407px;
+  position: relative;
+  left: 47px;
+  top: 40px;
+}
+.title-of-information {
+  color: #ffffff;
+  font-size: 26px;
+  direction: rtl;
+  line-height: 59px;
+  font-weight: 500;
+  text-align: justify;
+  padding-right: 50px;
+}
+.text-sec1-information {
+  float: right;
+  max-width: 650px;
+  min-width: 650px;
+  height: 300px;
+  margin-top: 47px;
+}
+.information-caption {
+  min-width: 790px;
+  max-width: 790px;
+}
+.title-of-caption {
+  min-width: 790px;
+  max-width: 790px;
+
+}
+.m-one-row {
+  margin-top: 170px;
+  text-align: justify;
+}
+.title-of-caption h1 {
+  line-height: 39px;
+  margin-bottom: 50px;
+  direction: rtl;
+  text-align: justify;
+}
+.title-of-caption p {
+  line-height: 39px;
+  margin-bottom: 50px;
+  text-align: justify;
+  direction: rtl;
+}
+.center-image {
+  max-width: 790px;
+  height: 240px;
+}
+.assist-section {
+  max-width: 790px;
+  min-width: 790px;
+  height: 240px;
+  background-color: #45777d;
+  padding: 30px;
+  line-height: 39px;
+  margin-bottom: 50px;
+}
+.assist-section h1 {
+  line-height: 39px;
+  text-align: center;
+  color: white;
+}
+
+//*******************************share-icon*********************************
+//************************************medium-card***************************************
+.news-card {
+  width: 340px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: table;
+  overflow: hidden;
+}
+.card-text1 {
+  position: relative;
+  bottom: 47px;
+  direction: rtl;
+  line-height: 30px;
+  color: #223b40;
+  text-align: right;
+}
+.card .card-body .card-text {
+  font-weight: 500;
+  font-size: 18px;
+}
+//************************************medium-card***************************************
+//*******************************************************************************
+//*******************************************************************************
+//*******************************************************************************
+//*********************************************max-567***********************************************+++++++++
+
+@media (max-width: 567px) {
+  .card{
+    width: 288px;
+    margin-bottom: 55px;
+  }
+
+}
+//*********************************************min-567***********************************************+++++++
+
+@media (min-width: 567px) {
+
+}
+
+//*********************************************min-768***********************************************+++++++++
+
+@media (min-width: 768px) {
+
+}
+
+
+
+//*********************************************min-992***********************************************++++++++
+
+@media (min-width: 992px){
+
+}
+
+
+
+//*********************************************min-1200***********************************************++++++++++
+
+@media (min-width: 1200px){
+
+}
+

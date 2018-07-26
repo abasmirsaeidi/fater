@@ -7,6 +7,98 @@
 .news{
   height: 711px;
 }
+//************************************medium-card***************************************
+.news-card {
+  width: 340px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  display: table;
+  overflow: hidden;
+}
+.card-text1 {
+  position: relative;
+  bottom: 47px;
+  direction: rtl;
+  line-height: 30px;
+  color: #223b40;
+  text-align: right;
+}
+.card .card-body .card-text {
+  font-weight: 500;
+  font-size: 18px;
+}
+//************************************medium-card***************************************
+//*************************************Button*********************************************
+.text-center1 {
+  text-align: center;
+  justify-content: center;
+}
+.btn-news {
+  background-color: rgba(34, 59, 64, 1.0);
+  border-radius: 27px;
+  width: 231px;
+  height: 55px;
+  float: left;
+  text-align: center;
+  color: #ffffff !important;
+  padding-top: 18px;
+  margin-bottom: 20px;
+}
+.add-btn {
+  position: relative;
+  bottom: 20px;
+}
+//*************************************Button*********************************************
+//******************************************cards**************************************************
+.news-card-shadow {
+  -webkit-box-shadow: 0px 2px 32px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 32px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 32px 0px rgba(0, 0, 0, 0.3);
+}
+//******************************************cards**************************************************
+//*******************************share-icon*********************************
+.share-icon {
+  z-index: 500;
+  font-family: normal;
+  left: 3px;
+  font-size: 16px;
+  position: relative;
+  top: 18px;
+  color: #000;
+  text-decoration: none;
+}
+.share-icon:hover {
+  color: #000;
+}
+
+.share-icon-div {
+  position: relative;
+  bottom: 27px;
+  left: 25px;
+  height: 52px !important;
+  width: 52px !important;
+  border-radius: 50%;
+  background-color: #01b8ca;
+  z-index: 500;
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.6);
+}
+.share-icon .fa-share-alt {
+  font-size: 15px;
+}
+.rotate-icon {
+  transform: rotate(-90deg);
+}
+//*******************************share-icon*********************************
+mdb-carousel{
+  position: relative;
+  bottom: 68px !important;
+}
+mdb-carousel .carousel-indicators {
+  position: relative !important;
+  top: 542px!important;
+  left: 35px!important;
+  background-color: navajowhite!important;
+}
+
 body {
   touch-action: unset !important;
   user-select: unset !important;
@@ -15,6 +107,37 @@ body {
   font-family: IRANSans;
   font-weight: 300;
   box-sizing: border-box;
+}
+.news-slider {
+  height: 455px;
+  width: 100vw;
+  object-fit: cover;
+}
+.news-slider img {
+  min-height: 455px;
+}
+
+.news-slider ol {
+  top: 475px;
+}
+.news-slider .carousel-control-next {
+  display: none;
+}
+.news-slider .carousel-control-prev {
+  display: none;
+}
+.news-slider .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #d8d8d8;
+}
+.news-slider .carousel-indicators .active {
+  background-color: #01b8ca;
+}
+.news-slider .carousel-indicators {
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
 
 .toolbar-home{
@@ -51,9 +174,55 @@ body {
 .navbar-nav.logo{
   flex-direction: row ;
 }
+//***********************************************************
+//***********************************************************
+//***********************************************************
+/////////////////////////////////////media/////////////////////////////////////////+++++++++++++
+
+
+
+@media (max-width: 576px) {
+  .share-icon-div {
+    position: relative;
+    bottom: 27px;
+    left: 25px;
+    height: 52px !important;
+    width: 52px !important;
+    border-radius: 50%;
+    background-color: #01b8ca;
+    z-index: 500;
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, .6);
+  }
+}
+
+@media (min-width: 576px) {
+  .share-icon-div {
+    position: relative;
+    bottom: 27px;
+    left: 25px;
+    height: 52px !important;
+    width: 52px !important;
+    border-radius: 50%;
+    background-color: #01b8ca;
+    z-index: 500;
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, .6);
+  }
+}
+
 
 
 @media (min-width: 768px) {
+  .share-icon-div {
+    position: relative;
+    bottom: 27px;
+    left: 25px;
+    height: 52px !important;
+    width: 52px !important;
+    border-radius: 50%;
+    background-color: #01b8ca;
+    z-index: 500;
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, .6);
+  }
   .carousel.my-style{
     touch-action: auto;
     user-select: all;
@@ -89,16 +258,7 @@ body {
 
 }
 
-
-
-
 @media (min-width: 992px){
-  .carousel.my-style{
-    touch-action: auto;
-    user-select: all;
-    -webkit-user-drag: auto;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
   .logos-home.container{
     max-width: 960px;
     min-width: 960px;
@@ -125,6 +285,10 @@ body {
     padding-bottom: 15px;
     text-align: right;
   }
+
+
+
+
   mdb-carousel.my-style .carousel-indicators ol{
     top: 26px !important;
     left: 125px !important;
@@ -208,18 +372,55 @@ body {
 
 
 
+  .carousel-indicators{
+    position: relative;
+    top: 26px !important;
+    left: 125px !important;
+  }
 
+}
+////////////////////////////////////media/////////////////////////////////////////------------------
+
+//*******************************************************************************
+//*******************************************************************************
+//*******************************************************************************
+//*********************************************max-567***********************************************+++++++++
+
+@media (max-width: 567px) {
+  .card{
+    width: 288px;
+    margin-bottom: 55px;
+  }
+
+}
+//*********************************************min-567***********************************************+++++++
+
+@media (min-width: 567px) {
+
+}
+
+//*********************************************min-768***********************************************+++++++++
+
+@media (min-width: 768px) {
+  .img-of-card{
+    height:  196.406px;
+  }
 
 }
 
 
-mdb-carousel{
-  position: relative;
-  bottom: 68px !important;
+
+//*********************************************min-992***********************************************++++++++
+
+@media (min-width: 992px){
+
 }
-mdb-carousel .carousel-indicators {
-  position: relative !important;
-  top: 542px!important;
-  left: 35px!important;
-  background-color: navajowhite!important;
+
+
+
+//*********************************************min-1200***********************************************++++++++++
+
+@media (min-width: 1200px){
+
 }
+
