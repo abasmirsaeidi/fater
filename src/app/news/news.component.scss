@@ -351,7 +351,6 @@ body {
   .container{
     main-width: 1166px !important;
     max-width: 1166px !important;
-
   }
   .card{
     width: 340px;
@@ -405,7 +404,9 @@ body {
   .img-of-card{
     height:  196.406px;
   }
-
+  .card{
+    width: 287px;
+  }
 }
 
 
@@ -413,7 +414,10 @@ body {
 //*********************************************min-992***********************************************++++++++
 
 @media (min-width: 992px){
-
+  .container.home-cards{
+    min-width: 988px !important;
+    max-width: 988px !important;
+  }
 }
 
 
@@ -421,6 +425,9 @@ body {
 //*********************************************min-1200***********************************************++++++++++
 
 @media (min-width: 1200px){
-
+  .container.home-cards{
+    min-width: 1220px !important;
+    max-width: 1220px !important;
+  }
 }
 

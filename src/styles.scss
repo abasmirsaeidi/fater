@@ -203,6 +203,11 @@ mdb-carousel .carousel slide-point {
 //*****************************max-576*************************************+++++++++++++
 
 @media (max-width: 576px) {
+  .cardd{
+    height: 353px;
+    margin-bottom: 60px;
+  }
+
   body {
     overflow-x: hidden;
   }
@@ -237,6 +242,9 @@ mdb-carousel .carousel slide-point {
 //*****************************min-576*************************************+++++++++
 
 @media (min-width: 576px) {
+  .cardd{
+    height: 303px;
+  }
   body {
     overflow-x: hidden;
   }
@@ -276,6 +284,9 @@ mdb-carousel .carousel slide-point {
 //*****************************min-768*************************************++++++++++++++
 
 @media (min-width: 768px) {
+  .cardd{
+    height: 380px;
+  }
   body {
     overflow-x: hidden;
   }
@@ -345,21 +356,23 @@ mdb-carousel .carousel slide-point {
 }
 
 
-mdb-carousel.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 268px;
-  left: 93px;
-  z-index: 15;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-  background-color: darkblue;
+
+
+
+//*************************************************************************
+.carousel .carousel-indicators li{
+  width: 15px;
+  height: 15px;
+  margin-right: 7px;
+  margin-left: 7px;
+  background-color: #d8d8d8;
 }
-.carousel-indicators {
+.carousel .carousel-indicators li.active{
+  background-color: #01b8ca;
+}
+//*********************************news-slide******************************
+
+.news-slide .carousel-indicators {
   position: absolute;
   right: 0;
   bottom: 10px;
@@ -371,5 +384,53 @@ mdb-carousel.carousel-indicators {
   margin-right: 15%;
   margin-left: 15%;
   list-style: none;
-  background-color: firebrick;
+  //background-color: firebrick;
 }
+
+//*********************************news-slide******************************
+
+//*********************************collection-slide************************
+.collection-slide .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  //background-color: #3d31b2;
+}
+
+//*********************************collection-slide************************
+
+//*********************************home-slide******************************
+.content .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 128px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  //background-color: #3d31b2;
+}
+@media ( min-width: 992px) {
+  .content .carousel-indicators {
+    bottom: 463px;
+  }
+}
+@media (max-width: 576px) {
+  .content .carousel-indicators {
+    bottom: 200px;
+  }
+
+}
+//*********************************home-slide****************************************

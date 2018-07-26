@@ -1,7 +1,7 @@
 <div class="height-header"></div>
 
 <!--Carousel Wrapper-->
-<mdb-carousel  class="" [isControls]="true" [animation]="'slide'" [interval]="3000">
+<mdb-carousel  class="news-slide" [isControls]="true" [animation]="'slide'" [interval]="3000">
   <!--First slide-->
   <mdb-slide class=""  >
     <img class="d-block w-100 news-slider" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b053bed12dba7000bc2aef2/5b053bee12dba7000cecf353/img/desktop-rectangle-3.png" alt="First slide">
@@ -26,7 +26,7 @@
 <div class="row">
   <div class="container home-cards">
 
-    <div class="col-xs-4  col-xl-4 col-lg-4 col-sm-6 d-inline-block mb-0 mb-sm-5  " *ngFor="let program of receivedPageData.other_program; let i=index ">
+    <div class="col-xs-4 col-md-6 col-xl-4 col-lg-4 col-sm-6 d-inline-block mb-0 mb-sm-5  " *ngFor="let program of receivedPageData.other_program; let i=index ">
 
       <!--Card-->
       <div class="card news-card-shadow mx-auto" [class.d-none]="i>=2"  [class.d-md-block]="i<=8" [class.d-lg-none]="i>=9">
@@ -51,7 +51,6 @@
           <p class="card-text card-text1 font-18">{{ program.caption }}</p>
         </div>
         <!--Card content-->
-
       </div>
       <!--/.Card-->
     </div>
@@ -286,7 +285,7 @@
 <div class="row text-center1 add-btn ">
   <a class="nav-link btn-news font-20"  >
      <!--(click)="OnCreation_List_Cards()"-->
-  >بیشتر</a>
+  بیشتر</a>
 </div>
 <!--<div class="" *ngIf="cadrcreated">{{cards}}-->
 
