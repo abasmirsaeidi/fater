@@ -188,6 +188,7 @@ mdb-carousel{
     margin-left: auto;
   }
   .card-text-collections {
+
     position: relative;
     top: 158px;
     text-align: right;
@@ -196,23 +197,26 @@ mdb-carousel{
     font-weight: 500;
     font-size: 18px;
     left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .btn-add {
     border: #ffffff solid 2px;
     border-radius: 27px;
     width: 99px;
-    height: 33px;
+    min-height: 33px;
     float: left;
     text-align: center;
-    margin-top: 0;
     color: #e9e9e9 !important;
     position: relative;
-    top: 45px;
+    top: 13px;
     padding: 0;
-    left: 134px;
+    left: 0;
     background-color: transparent;
+    margin-left: 34%;
+    right: 18%;
+    margin-top: 5%;
   }
-
 
 
 

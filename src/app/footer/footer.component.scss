@@ -254,13 +254,15 @@ footer {
 //*********************************************max-567***********************************************+++++++++
 
 @media (max-width: 567px) {
-  .bg-footer2 {
-    height: 108px;
-    width: 100px;
-    border: solid 2px rgba(139, 238, 255, 1.0);
-    padding: 12px !important;
+    .bg-footer2{
+      height: 108px;
+      border: solid 2px #8beeff;
+      padding: 12px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      max-width: 90vw;
+    }
 
-  }
 
 }
 //*********************************************min-567***********************************************+++++++
