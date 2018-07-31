@@ -404,8 +404,8 @@ body {
   .img-of-card{
     height:  196.406px;
   }
-  .card{
-    width: 287px;
+  .img-of-card{
+    height:  196.406px;
   }
 }
 
@@ -418,6 +418,19 @@ body {
     min-width: 988px !important;
     max-width: 988px !important;
   }
+  .card{
+    width: 288px;
+  }
+  .img-of-card{
+    height:  174.578px;
+  }
+  .width-cars {
+    width: 520PX;
+    height: 385px;
+    position: relative;
+    top: 27px;
+    left: 75px;
+  }
 }
 
 
@@ -425,9 +438,29 @@ body {
 //*********************************************min-1200***********************************************++++++++++
 
 @media (min-width: 1200px){
+  .container{
+    main-width: 1166px !important;
+    max-width: 1166px !important;
+
+  }
+  .card{
+    width: 340px;
+  }
   .container.home-cards{
     min-width: 1220px !important;
     max-width: 1220px !important;
   }
+
+  .width-cars {
+    width: 1125PX;
+    height: 385px;
+    position: relative;
+    top: 20px;
+    left: 75px;
+  }
+  .img-of-card{
+    height: 212px;
+  }
+
 }
 
