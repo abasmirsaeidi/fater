@@ -1,18 +1,22 @@
 <div class="height-header"></div>
 <!--<div class="row mt-5">-->
-<div class="row">
-  <div class="sec1-of-information site-color">
-    <div class="text-sec1-information">
-      <h1 class=" title-of-information">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</h1>
+<div class="row ">
+  <div class="container information">
+    <div class="sec1-of-information site-color">
+      <div class="text-sec1-information">
+        <h1 class="title-of-information">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</h1>
+      </div>
+      <!--</div>-->
+      <div class="row">
+        <img class="information-image img-fluid" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b03d054fda4ae000c932b3d/5b03e525fda4ae000b3d48ab/img/desktop-rectangle-3.png">
+      </div>
     </div>
-    <img class="information-image img-fluid" src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b03d054fda4ae000c932b3d/5b03e525fda4ae000b3d48ab/img/desktop-rectangle-3.png">
-    <div class="information-image img-fluid "></div>
   </div>
-  <!--</div>-->
 </div>
 
-<div class="row m-one-row">
-  <div class="information-caption m-auto">
+<!--*******************************************************************-->
+<div class="row m-one-row text-justify">
+  <div class="information-caption container m-auto">
     <div class="title-of-caption ">
       <h1 class="font-20 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
       </h1>
@@ -29,85 +33,49 @@
     </div>
   </div>
 </div>
+<!--*******************************************************************-->
 <div class="row mt-5 mb-5 ">
   <div class="assist-section m-auto">
-    <h1 class="font-29 ">
+    <div class="container">
+    <h1 class="font-24 ">
       به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.
     </h1>
-
-      <a class="nav-link btn-assist font-20" routerLink="/news">همکاری</a>
-
+    <a class="nav-link btn-assist font-20" routerLink="/news">همکاری</a>
+    </div>
   </div>
 </div>
+<!--**************************************information-cards*****************************************-->
+<div class="row">
+  <div class="container home-cards">
 
-<div class="row  ">
+    <div class="col-xs-4  col-xl-4 col-lg-4 col-sm-6 d-inline-block mb-0 mb-sm-5  " *ngFor="let program of receivedPageData.other_program; let i=index ">
 
-  <div class="container-cards row mt-5 mb-5">
-
-    <div class="card width-card2 card-shadow1">
-      <!--Card image-->
-      <div routerLink="/information" class="view overlay waves-light" mdbWavesEffect>
-        <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 2.png" class="img-fluid" alt="fern">
-        <a>
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-      <!--/.Card image-->
-      <!--Card content-->
-      <div class="card-body card-body-width">
-        <div class="share-icon-div ">
-          <a class="activator p-3 mr-2  share-icon" routerLink="/information">
-            <i class="fa fa-share-alt rotate-icon "></i>
+      <!--Card-->
+      <div class="card news-card-shadow mx-auto" [class.d-none]="i>=2"  [class.d-md-block]="i<=3" [class.d-lg-none]="i>=3">
+        <!--[class.d-lg-block]="i<=8">-->
+        <!--Card image-->
+        <div class="view  waves-light img-of-card" mdbWavesEffect>
+          <img src="{{ program.img }}" class="img-fluid  ffff" alt="Card image with a tree in a middle of a lake.">
+          <a>
+            <div class="mask"></div>
           </a>
         </div>
-        <p class="card-text card-text1 font-18">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-      </div>
-      <!--/.Card content-->
-    </div>
+        <span>   <div class="share-icon-div ">
+            <a class="activator p-3 mr-2  share-icon" routerLink="/information">
+              <i class="fa fa-share-alt rotate-icon "></i>
+            </a>
+          </div>
+        </span>
 
-    <div class="card width-card2 card-shadow1">
-      <!--Card image-->
-      <div class="view overlay waves-light" routerLink="/information" mdbWavesEffect>
-        <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy 1.png" class="img-fluid" alt="fern">
-        <a>
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-      <!--/.Card image-->
-      <!--Card content-->
-      <div class="card-body card-body-width ">
-        <div class="share-icon-div ">
-          <a class="activator p-3 mr-2  share-icon" routerLink="/information">
-            <i class="fa fa-share-alt rotate-icon "></i>
-          </a>
+        <!--Card content-->
+        <div class="card-body">
+          <!--Text-->
+          <p class="card-text card-text1 font-18">{{ program.caption }}</p>
         </div>
-        <p class="card-text card-text1 font-18">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+        <!--Card content-->
+
       </div>
-      <!--/.Card content-->
+      <!--/.Card-->
     </div>
-
-
-    <div class="card width-card2 card-shadow1">
-      <!--Card image-->
-      <div class="view overlay waves-light"routerLink="/information" mdbWavesEffect>
-        <img src="https://anima-uploads.s3.amazonaws.com/5a47554c8aafab000d8aa728/5b02b7c13a51d5000bd474f7/5b03bf94c8668f000c2ab90c/img/desktop-rectangle-13-copy.png" class="img-fluid" alt="fern">
-        <a>
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-      <!--/.Card image-->
-      <!--Card content-->
-      <div class="card-body card-body-width">
-        <div class="share-icon-div ">
-          <a class="activator p-3 mr-2  share-icon" routerLink="/information">
-            <i class="fa fa-share-alt rotate-icon "></i>
-          </a>
-        </div>
-        <p class="card-text card-text1 font-18">به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
-      </div>
-      <!--/.Card content-->
-    </div>
-
   </div>
-
 </div>
