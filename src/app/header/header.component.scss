@@ -299,9 +299,9 @@ a:hover
 {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
-
+  top: 5px;
+  //left: 50px;
+  right: 0;
   z-index: 1;
 
   -webkit-user-select: none;
@@ -315,8 +315,8 @@ a:hover
   height: 32px;
   position: absolute;
   top: -7px;
-  left: -5px;
-
+  //left: -5px;
+  right: 0;
   cursor: pointer;
 
   opacity: 0; /* hide this */
@@ -393,18 +393,19 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 429px;
+  height: 1000px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-
+  right: -124px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(154%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
