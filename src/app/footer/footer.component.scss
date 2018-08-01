@@ -38,10 +38,12 @@ footer {
 .bg-footer{
   background-color: #9e9e9e;
 }
+//*******************************************************************************
+//*******************************************************************************
+//*******************************************************************************
+//*********************************************max-567***********************************************+++++++++
 
-
-
-@media ( max-width: 576px) {
+@media (max-width: 567px) {
   .part4-footer {
     position: relative;
     //left: 63px;
@@ -58,12 +60,16 @@ footer {
     bottom: 0;
   }
 
-
-}
-@media ( max-width: 576px) {
-  .mobile-queri{
-    border-top: 2px #223b40 solid; margin-bottom:28px ; margin-top: 5px; width: auto;
-    min-width: 330px!important;
+  .bg-footer2{
+    height: 108px;
+    border: solid 2px #8beeff;
+    padding: 12px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 90vw;
+  }
+  .row.color-text2.mb-5 {
+    margin-bottom: 0 !important;
   }
   .part4-footer {
     text-align: justify;
@@ -100,17 +106,10 @@ footer {
 
 
 
-
-
 }
+//*********************************************min-567***********************************************+++++++
 
-
-
-
-
-
-
-@media ( min-width: 576px) {
+@media (min-width: 567px) {
   .part4-footer {
     text-align: justify;
     direction: rtl;
@@ -140,12 +139,14 @@ footer {
     padding: 12px !important;
 
   }
-
 }
 
+//*********************************************min-768***********************************************+++++++++
 
-
-@media ( min-width: 768px ) and ( max-width: 992px ){
+@media (min-width: 768px) {
+  .container{
+    max-width: 720px;
+  }
   .part4-footer {
 
     position: relative;
@@ -176,12 +177,21 @@ footer {
     width: 240px;
   }
 
-
-
-
 }
 
-@media ( min-width: 992px) {
+
+
+//*********************************************min-992***********************************************++++++++
+
+@media (min-width: 992px){
+  .page-footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    width: 141px;
+  }
+  .container{
+    max-width: 960px;
+  }
   .page-footer .container{
     //max-width: 900px;
   }
@@ -217,14 +227,15 @@ footer {
     width: 345px;
   }
 
-
-
-
 }
 
 
-@media ( min-width: 1200px ) and ( max-width: 1500px ) {
 
+//*********************************************min-1200***********************************************++++++++++
+@media (min-width: 1200px){
+  .container{
+    max-width: 1166px;
+  }
   .part3-footer{
     position: relative;
     left: 0;
@@ -244,61 +255,18 @@ footer {
     position: relative;
     left: 0;
   }
-  .bg-footer2 {
+  .bg-footer2{
     position: relative;
     right: 22px;
     width: 345px;
   }
-
-
-}
-//*******************************************************************************
-//*******************************************************************************
-//*******************************************************************************
-//*********************************************max-567***********************************************+++++++++
-
-@media (max-width: 567px) {
-    .bg-footer2{
-      height: 108px;
-      border: solid 2px #8beeff;
-      padding: 12px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      max-width: 90vw;
-    }
-  .row.color-text2.mb-5 {
-    margin-bottom: 0 !important;
+  .footer-line{
+    border-top: 2px #223b40 solid;
+    margin-bottom:28px;
+    margin-top: 5px;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
   }
-}
-//*********************************************min-567***********************************************+++++++
-
-@media (min-width: 567px) {
-
-}
-
-//*********************************************min-768***********************************************+++++++++
-
-@media (min-width: 768px) {
-
-}
-
-
-
-//*********************************************min-992***********************************************++++++++
-
-@media (min-width: 992px){
-  .page-footer .list-unstyled {
-    padding-left: 0;
-    list-style: none;
-    width: 141px;
-  }
-}
-
-
-
-//*********************************************min-1200***********************************************++++++++++
-
-@media (min-width: 1200px){
-
 }
 

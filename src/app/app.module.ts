@@ -11,22 +11,16 @@ import {AgmCoreModule} from '@agm/core';
 import {FooterModule} from './footer/footer.module';
 import {HttpClientModule} from '@angular/common/http';
 import { CoursesListComponent } from './courses-list/courses-list.component';
-// import { NewsComponent } from './news/news.component';
-// import { InformationComponent } from './information/information.component';
 
 
 @NgModule({
-
-
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     CoursesListComponent,
   ],
-
   imports: [
-
     HttpClientModule,
     FooterModule,
     BrowserModule,

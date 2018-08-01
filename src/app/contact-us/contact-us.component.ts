@@ -1,4 +1,7 @@
+///<reference path="../../../node_modules/@angular/forms/src/model.d.ts"/>
+// /<reference path="../../../node_modules/@angular/forms/src/model.d.ts"/>
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-contact-us',
@@ -7,13 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ContactUsComponent implements OnInit {
-  public map: any = { lat: 51.678418, lng: 7.809007 };
+  public map: any = {lat: 51.678418, lng: 7.809007};
   filterForm: any;
-
-
-  constructor() {}
+// ********
+  signupForm: FormGroup
 
   ngOnInit() {
+    this.signupForm = new FormGroup({
+      username: new FormControl(null),
+      email: new FormControl(null),
+      content: new FormControl(null)
+
+    })
   }
+    onSubmit(){
+      console.log(this.signupForm)
+    }
 
 }

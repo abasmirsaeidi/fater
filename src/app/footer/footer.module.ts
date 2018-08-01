@@ -6,7 +6,7 @@ import { WavesModule } from 'angular-bootstrap-md';
 @NgModule({
   imports: [    MDBBootstrapModule.forRoot(),
     WavesModule,
-    CommonModule
+    CommonModule,
   ],
   declarations: []
 })

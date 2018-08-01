@@ -2,52 +2,38 @@
 
 <div class="row">
   <div class="container-about-us row ">
-    <div class="part3-about-us">
-      <!--////////////////////////////////////-->
+    <!--************************************************-->
+    <form class="part3-about-us"
+          [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <input
+        type="text"
+        id="username"
+        formControlName="username"
+        class="name-contact direction pr-5 form-control" placeholder="نام" >
+      <input
+        type="text"
+        id="email"
+        formControlName="email"
+        class="email-contact direction pr-5 form-control" placeholder="ایمیل" >
+      <input
+        type="text"
+        id="content"
+        formControlName="content"
+        class="text-email-contact direction pr-5 form-control md-textarea" placeholder="متن ایمیل" type="email" >
+
+      <button
+        type="submit"
+        class="btn-contact btn "><a>ارسال</a>
+      </button>
+    </form>
+    <!--*********************************************-->
 
 
-      <!--&lt;!&ndash; Material form register &ndash;&gt;-->
-      <!--<form >-->
-
-      <!--&lt;!&ndash; Material input text &ndash;&gt;-->
-      <!--<div >-->
-      <!--<input type="text"  class=" border-2" >-->
-      <!--<label  class="font-weight-light">عنوان</label>-->
-      <!--</div>-->
-
-      <!--&lt;!&ndash; Material input email &ndash;&gt;-->
-      <!--<div >-->
-      <!--<input type="email"   class=" border-2" >-->
-      <!--<label class="font-weight-light">ایمیل</label>-->
-      <!--</div>-->
-
-      <!--&lt;!&ndash; Material input email &ndash;&gt;-->
-      <!--<div >-->
-      <!--<input type="email" id="text-email" class=" border-2" >-->
-      <!--<label for="text-email" class="font-weight-light">متن ایمیل</label>-->
-      <!--</div>-->
-
-
-
-      <!--<div class="text-center py-4 mt-3">-->
-      <!--<button class="btn btn-cyan waves-light" type="submit" >Register</button>-->
-      <!--</div>-->
-      <!--</form>-->
-      <!--&lt;!&ndash; Material form register &ndash;&gt;-->
-
-
-
-
-      <input class="name-contact direction pr-5 form-control" placeholder="نام" type="email" >
-      <input class="email-contact direction pr-5 form-control" placeholder="ایمیل" type="email" >
-      <input class="text-email-contact direction pr-5 form-control md-textarea" placeholder="متن ایمیل" type="email" >
-
-      <button class="btn-contact btn "><a>ارسال</a> </button>
-
-      <!--////////////////////////-->
-    </div>
     <div class="width-part1">
       <div class="part1-about-us site-color-light direction">
+
+
+
 
         <div class="card-body contact text-center h-100 white-text pr-2">
 
